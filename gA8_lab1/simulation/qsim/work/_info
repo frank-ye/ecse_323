@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Frank\Desktop\My Stuff\School Files\Semester 5\ECSE 323\Labs\Assignments\gA8_lab1\simulation\qsim
+vgA8_lab1
+Z1 I[hEPS2]<<GhhWRGH<0ARd3
+Z2 VC_4<FFQzD0IfMRb`VXW`i1
+Z3 dC:\Users\Frank\Desktop\My Stuff\School Files\Semester 5\ECSE 323\Labs\Assignments\gA8_lab1\simulation\qsim
+Z4 w1506110130
+Z5 8gA8_lab1.vo
+Z6 FgA8_lab1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 ng@a8_lab1
+!i10b 1
+Z10 !s100 N6eECfS^:Zb>i]WICT8`j0
+!s85 0
+Z11 !s108 1506110139.007000
+Z12 !s107 gA8_lab1.vo|
+Z13 !s90 -work|work|gA8_lab1.vo|
+!s101 -O0
+vgA8_lab1_vlg_check_tst
+!i10b 1
+!s100 h;A<5j^68JGFF6A53A4CK1
+IV060k]0?ZD=<5YJ9C<4EI0
+V[Ykl657gb?32J7^Qm[K<<2
+R3
+Z14 w1506110128
+Z15 8gA8_lab1.vt
+Z16 FgA8_lab1.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1506110139.991000
+Z18 !s107 gA8_lab1.vt|
+Z19 !s90 -work|work|gA8_lab1.vt|
+!s101 -O0
+R8
+ng@a8_lab1_vlg_check_tst
+vgA8_lab1_vlg_sample_tst
+!i10b 1
+!s100 H31fH>UJ^WCHde`dC6i:40
+IhKiTPgSJdUH0LDl?RGWK<3
+VVMe4_NI1kL5hCcKD;3OTD0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+ng@a8_lab1_vlg_sample_tst
+vgA8_lab1_vlg_vec_tst
+!i10b 1
+!s100 63Y<H0K_>bcYY2W<4n6g23
+Il<0bD]fz4Acc5bzONCYVP2
+VUK1lWk`WEBFIHd@JT9X1=1
+R3
+R14
+R15
+R16
+L0 155
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+ng@a8_lab1_vlg_vec_tst
