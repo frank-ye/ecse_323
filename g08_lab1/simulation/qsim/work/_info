@@ -1,0 +1,105 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Frank\Desktop\My Stuff\School Files\Semester 5\ECSE 323\Labs\Assignments\gA8_lab1\simulation\qsim
+v\1bit_ADD 
+!i10b 1
+Z1 !s100 3do1f@PF8O4hUzQG>6G^;1
+Z2 Idke5eb^<fKQMX7^T52OG@3
+Z3 VeM4BK;OjF4ZS[kAo4>f^l1
+Z4 dC:\Users\Frank\Desktop\My Stuff\School Files\Semester 5\ECSE 323\Labs\Assignments\gA8_lab1\simulation\qsim
+Z5 w1506710211
+Z6 81bit_ADD.vo
+Z7 F1bit_ADD.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1506710214.792000
+!s107 1bit_ADD.vo|
+Z9 !s90 -work|work|1bit_ADD.vo|
+!s101 -O0
+Z10 o-work work -O0
+Z11 n@1341bit_@a@d@d@040
+vgA8_lab1
+Z12 !s100 N6eECfS^:Zb>i]WICT8`j0
+Z13 I[hEPS2]<<GhhWRGH<0ARd3
+Z14 VC_4<FFQzD0IfMRb`VXW`i1
+R4
+Z15 w1506216150
+Z16 8gA8_lab1.vo
+Z17 FgA8_lab1.vo
+L0 31
+R8
+r1
+31
+Z18 !s90 -work|work|gA8_lab1.vo|
+R10
+Z19 ng@a8_lab1
+Z20 !s108 1506216159.073000
+Z21 !s107 gA8_lab1.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vgA8_lab1_vlg_check_tst
+Z22 !s100 h;A<5j^68JGFF6A53A4CK1
+Z23 IV060k]0?ZD=<5YJ9C<4EI0
+Z24 V[Ykl657gb?32J7^Qm[K<<2
+R4
+Z25 w1506216146
+Z26 8gA8_lab1.vt
+Z27 FgA8_lab1.vt
+L0 59
+R8
+r1
+31
+Z28 !s108 1506216160.214000
+Z29 !s107 gA8_lab1.vt|
+Z30 !s90 -work|work|gA8_lab1.vt|
+R10
+Z31 ng@a8_lab1_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vgA8_lab1_vlg_sample_tst
+Z32 !s100 H31fH>UJ^WCHde`dC6i:40
+Z33 IhKiTPgSJdUH0LDl?RGWK<3
+Z34 VVMe4_NI1kL5hCcKD;3OTD0
+R4
+R25
+R26
+R27
+L0 29
+R8
+r1
+31
+R28
+R29
+R30
+R10
+Z35 ng@a8_lab1_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vgA8_lab1_vlg_vec_tst
+Z36 !s100 63Y<H0K_>bcYY2W<4n6g23
+Z37 Il<0bD]fz4Acc5bzONCYVP2
+Z38 VUK1lWk`WEBFIHd@JT9X1=1
+R4
+R25
+R26
+R27
+Z39 L0 155
+R8
+r1
+31
+R28
+R29
+R30
+R10
+Z40 ng@a8_lab1_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0

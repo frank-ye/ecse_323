@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/gA8_lab1/1bit_ADD.bdf
+source_file = 1, C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/gA8_lab1/g08_adder.bdf
+source_file = 1, C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/gA8_lab1/1bit_ADD.vwf
+source_file = 1, 1bit_ADDER_TIMING.vwf
+source_file = 1, C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/gA8_lab1/db/1bit_ADD.cbx.xml
+design_name = \1bit_ADD 
+instance = comp, \Cin~I , Cin, \1bit_ADD , 1
+instance = comp, \B~I , B, \1bit_ADD , 1
+instance = comp, \A~I , A, \1bit_ADD , 1
+instance = comp, \inst2~0 , inst2~0, \1bit_ADD , 1
+instance = comp, \inst6~0 , inst6~0, \1bit_ADD , 1
+instance = comp, \SUM~I , SUM, \1bit_ADD , 1
+instance = comp, \Cout~I , Cout, \1bit_ADD , 1
