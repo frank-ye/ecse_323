@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 -40 216 -24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN[5..0]" (rect 5 0 43 12)(font "Arial" ))
+	(text "IN[5..0]" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 0 840 16)
+	(rect 664 -32 840 -16)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "OUT[8..0]" (rect 90 0 138 12)(font "Arial" ))
+	(text "OUT[8..6]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -234,6 +234,23 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 104 304))
 	)
 )
+(symbol
+	(rect 280 152 312 184)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(text "IN[0]" (rect 384 -24 408 -12)(font "Arial" ))
 	(pt 416 -8)
@@ -339,3 +356,38 @@ applicable agreement for further details.
 	(pt 416 216)
 	(pt 384 216)
 )
+(connector
+	(pt 416 88)
+	(pt 296 88)
+)
+(connector
+	(pt 416 104)
+	(pt 296 104)
+)
+(connector
+	(pt 296 88)
+	(pt 296 104)
+)
+(connector
+	(pt 416 120)
+	(pt 296 120)
+)
+(connector
+	(pt 296 104)
+	(pt 296 120)
+)
+(connector
+	(pt 416 136)
+	(pt 296 136)
+)
+(connector
+	(pt 296 120)
+	(pt 296 136)
+)
+(connector
+	(pt 296 136)
+	(pt 296 152)
+)
+(junction (pt 296 104))
+(junction (pt 296 120))
+(junction (pt 296 136))
