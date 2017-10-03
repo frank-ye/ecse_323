@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
 
-// DATE "09/23/2017 21:22:29"
+// DATE "10/02/2017 14:14:23"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -28,7 +28,7 @@
 
 `timescale 1 ps/ 1 ps
 
-module gA8_lab1 (
+module gA8_comp7 (
 	AeqB,
 	A,
 	B);
@@ -65,11 +65,11 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \inst|inst6~combout ;
-wire \inst|inst7~1_combout ;
-wire \inst|inst7~2_combout ;
-wire \inst|inst7~0_combout ;
-wire \inst|inst7~3_combout ;
+wire \inst6~combout ;
+wire \inst7~1_combout ;
+wire \inst7~2_combout ;
+wire \inst7~0_combout ;
+wire \inst7~3_combout ;
 wire [6:0] \B~combout ;
 wire [6:0] \A~combout ;
 
@@ -255,20 +255,20 @@ defparam \B[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y19_N6
-cycloneii_lcell_comb \inst|inst6 (
+cycloneii_lcell_comb inst6(
 // Equation(s):
-// \inst|inst6~combout  = \A~combout [0] $ (\B~combout [0])
+// \inst6~combout  = \A~combout [0] $ (\B~combout [0])
 
 	.dataa(vcc),
 	.datab(\A~combout [0]),
 	.datac(vcc),
 	.datad(\B~combout [0]),
 	.cin(gnd),
-	.combout(\inst|inst6~combout ),
+	.combout(\inst6~combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst|inst6 .lut_mask = 16'h33CC;
-defparam \inst|inst6 .sum_lutc_input = "datac";
+defparam inst6.lut_mask = 16'h33CC;
+defparam inst6.sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: PIN_M6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
@@ -380,20 +380,20 @@ defparam \A[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y19_N2
-cycloneii_lcell_comb \inst|inst7~1 (
+cycloneii_lcell_comb \inst7~1 (
 // Equation(s):
-// \inst|inst7~1_combout  = (\B~combout [4] & (\A~combout [4] & (\B~combout [3] $ (!\A~combout [3])))) # (!\B~combout [4] & (!\A~combout [4] & (\B~combout [3] $ (!\A~combout [3]))))
+// \inst7~1_combout  = (\B~combout [4] & (\A~combout [4] & (\B~combout [3] $ (!\A~combout [3])))) # (!\B~combout [4] & (!\A~combout [4] & (\B~combout [3] $ (!\A~combout [3]))))
 
 	.dataa(\B~combout [4]),
 	.datab(\B~combout [3]),
 	.datac(\A~combout [4]),
 	.datad(\A~combout [3]),
 	.cin(gnd),
-	.combout(\inst|inst7~1_combout ),
+	.combout(\inst7~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst|inst7~1 .lut_mask = 16'h8421;
-defparam \inst|inst7~1 .sum_lutc_input = "datac";
+defparam \inst7~1 .lut_mask = 16'h8421;
+defparam \inst7~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: PIN_N6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
@@ -505,20 +505,20 @@ defparam \A[2]~I .output_sync_reset = "none";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y19_N28
-cycloneii_lcell_comb \inst|inst7~2 (
+cycloneii_lcell_comb \inst7~2 (
 // Equation(s):
-// \inst|inst7~2_combout  = (\B~combout [2] & (\A~combout [2] & (\B~combout [1] $ (!\A~combout [1])))) # (!\B~combout [2] & (!\A~combout [2] & (\B~combout [1] $ (!\A~combout [1]))))
+// \inst7~2_combout  = (\B~combout [2] & (\A~combout [2] & (\B~combout [1] $ (!\A~combout [1])))) # (!\B~combout [2] & (!\A~combout [2] & (\B~combout [1] $ (!\A~combout [1]))))
 
 	.dataa(\B~combout [2]),
 	.datab(\B~combout [1]),
 	.datac(\A~combout [1]),
 	.datad(\A~combout [2]),
 	.cin(gnd),
-	.combout(\inst|inst7~2_combout ),
+	.combout(\inst7~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst|inst7~2 .lut_mask = 16'h8241;
-defparam \inst|inst7~2 .sum_lutc_input = "datac";
+defparam \inst7~2 .lut_mask = 16'h8241;
+defparam \inst7~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: PIN_L8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
@@ -630,42 +630,42 @@ defparam \A[5]~I .output_sync_reset = "none";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y19_N0
-cycloneii_lcell_comb \inst|inst7~0 (
+cycloneii_lcell_comb \inst7~0 (
 // Equation(s):
-// \inst|inst7~0_combout  = (\B~combout [6] & (\A~combout [6] & (\B~combout [5] $ (!\A~combout [5])))) # (!\B~combout [6] & (!\A~combout [6] & (\B~combout [5] $ (!\A~combout [5]))))
+// \inst7~0_combout  = (\B~combout [6] & (\A~combout [6] & (\B~combout [5] $ (!\A~combout [5])))) # (!\B~combout [6] & (!\A~combout [6] & (\B~combout [5] $ (!\A~combout [5]))))
 
 	.dataa(\B~combout [6]),
 	.datab(\B~combout [5]),
 	.datac(\A~combout [6]),
 	.datad(\A~combout [5]),
 	.cin(gnd),
-	.combout(\inst|inst7~0_combout ),
+	.combout(\inst7~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst|inst7~0 .lut_mask = 16'h8421;
-defparam \inst|inst7~0 .sum_lutc_input = "datac";
+defparam \inst7~0 .lut_mask = 16'h8421;
+defparam \inst7~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y19_N24
-cycloneii_lcell_comb \inst|inst7~3 (
+cycloneii_lcell_comb \inst7~3 (
 // Equation(s):
-// \inst|inst7~3_combout  = (!\inst|inst6~combout  & (\inst|inst7~1_combout  & (\inst|inst7~2_combout  & \inst|inst7~0_combout )))
+// \inst7~3_combout  = (!\inst6~combout  & (\inst7~1_combout  & (\inst7~2_combout  & \inst7~0_combout )))
 
-	.dataa(\inst|inst6~combout ),
-	.datab(\inst|inst7~1_combout ),
-	.datac(\inst|inst7~2_combout ),
-	.datad(\inst|inst7~0_combout ),
+	.dataa(\inst6~combout ),
+	.datab(\inst7~1_combout ),
+	.datac(\inst7~2_combout ),
+	.datad(\inst7~0_combout ),
 	.cin(gnd),
-	.combout(\inst|inst7~3_combout ),
+	.combout(\inst7~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst|inst7~3 .lut_mask = 16'h4000;
-defparam \inst|inst7~3 .sum_lutc_input = "datac";
+defparam \inst7~3 .lut_mask = 16'h4000;
+defparam \inst7~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: PIN_H1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \AeqB~I (
-	.datain(\inst|inst7~3_combout ),
+	.datain(\inst7~3_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),

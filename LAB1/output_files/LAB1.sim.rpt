@@ -1,5 +1,5 @@
 Simulator report for LAB1
-Sun Oct 01 15:18:09 2017
+Tue Oct 03 13:18:33 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 640.0 ns     ;
-; Simulation Netlist Size     ; 50 nodes     ;
+; Simulation Netlist Size     ; 58 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 1391         ;
+; Total Number of Transitions ; 2305         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
@@ -95,9 +95,9 @@ Please use Quartus II 64-Bit to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 50           ;
-; Total output ports checked                          ; 50           ;
-; Total output ports with complete 1/0-value coverage ; 50           ;
+; Total nodes checked                                 ; 58           ;
+; Total output ports checked                          ; 58           ;
+; Total output ports with complete 1/0-value coverage ; 58           ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
 ; Total output ports with no 1-value coverage         ; 0            ;
 ; Total output ports with no 0-value coverage         ; 0            ;
@@ -120,7 +120,11 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |g08_Modulo_13|A[2]                                                          ; |g08_Modulo_13|A[2]                                                          ; out              ;
 ; |g08_Modulo_13|A[1]                                                          ; |g08_Modulo_13|A[1]                                                          ; out              ;
 ; |g08_Modulo_13|A[0]                                                          ; |g08_Modulo_13|A[0]                                                          ; out              ;
+; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst7|inst4   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst7|inst4   ; out0             ;
+; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst    ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst    ; out0             ;
+; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst6   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst6   ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst5   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst5   ; out0             ;
+; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst4   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst4   ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst   ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst6  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst6  ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst5  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst5  ; out0             ;
@@ -137,16 +141,20 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst4  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst4  ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst2  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst2  ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst4  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst4  ; out0             ;
+; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst7|inst2   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst7|inst2   ; out0             ;
+; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst7|inst4   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst7|inst4   ; out0             ;
+; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst2   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst2   ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst    ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst    ; out0             ;
+; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst6   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst6   ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst5   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst5   ; out0             ;
+; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst4   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst4   ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst2  ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst2  ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst   ; out0             ;
-; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst2  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst2  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst4  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst4  ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst2  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst2  ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst4  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst4  ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10|inst2 ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10|inst2 ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst                 ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst                 ; out0             ;
+; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst6                ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst6                ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst5                ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst5                ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst2               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst2               ; out0             ;
 ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst                ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst                ; out0             ;
@@ -192,19 +200,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Oct 01 15:18:07 2017
+    Info: Processing started: Tue Oct 03 13:18:32 2017
 Info: Command: quartus_sim --simulation_results_format=VWF LAB1 -c LAB1
 Info (324025): Using vector source file "C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/LAB1/g08_Modulo_13.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
 Info (328053): Simulation coverage is     100.00 %
-Info (328052): Number of transitions in simulation is 1391
+Info (328052): Number of transitions in simulation is 2305
 Info (324045): Vector file LAB1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 330 megabytes
-    Info: Processing ended: Sun Oct 01 15:18:09 2017
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Tue Oct 03 13:18:33 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

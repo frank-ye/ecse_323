@@ -1,5 +1,5 @@
 Flow report for gA8_lab1
-Fri Sep 29 15:09:43 2017
+Tue Oct 03 13:21:30 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Sep 29 15:09:43 2017      ;
+; Flow Status                        ; Successful - Tue Oct 03 13:21:30 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA8_lab1                                   ;
-; Top-level Entity Name              ; gA8_lab1                                   ;
+; Top-level Entity Name              ; g08_Modulo_13                              ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C20F484C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 5 / 18,752 ( < 1 % )                       ;
-;     Total combinational functions  ; 5 / 18,752 ( < 1 % )                       ;
+; Total logic elements               ; 16 / 18,752 ( < 1 % )                      ;
+;     Total combinational functions  ; 16 / 18,752 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 18,752 ( 0 % )                         ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 15 / 315 ( 5 % )                           ;
+; Total pins                         ; 10 / 315 ( 3 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                             ;
@@ -64,30 +64,31 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/29/2017 15:09:05 ;
+; Start date & time ; 10/03/2017 13:20:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; gA8_lab1            ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                           ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 93094397669076.150671214501520        ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++-------------------------------------+---------------------------------------+---------------+---------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name   ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+---------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 93094397669076.150705125708820        ; --            ; --            ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --            ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --            ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --            ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --            ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --            ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; g08_Modulo_13 ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; g08_Modulo_13 ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; g08_Modulo_13 ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --            ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --            ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --            ; --             ;
+; TOP_LEVEL_ENTITY                    ; g08_Modulo_13                         ; gA8_lab1      ; --            ; --             ;
++-------------------------------------+---------------------------------------+---------------+---------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 477 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:14     ; 1.0                     ; 723 MB              ; 00:00:13                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 431 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 421 MB              ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 474 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:12     ; 1.0                     ; 719 MB              ; 00:00:12                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 437 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 421 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 397 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:29     ; --                      ; --                  ; 00:00:25                           ;
+; Total                     ; 00:00:26     ; --                      ; --                  ; 00:00:24                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

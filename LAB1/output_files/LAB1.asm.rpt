@@ -1,5 +1,5 @@
 Assembler report for LAB1
-Sun Oct 01 15:10:07 2017
+Mon Oct 02 14:26:38 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 01 15:10:07 2017 ;
+; Assembler Status      ; Successful - Mon Oct 02 14:26:38 2017 ;
 ; Revision Name         ; LAB1                                  ;
-; Top-level Entity Name ; g08_Modulo_13                         ;
+; Top-level Entity Name ; g08_adder                             ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C20F484C7                          ;
 +-----------------------+---------------------------------------+
@@ -94,8 +94,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                                                               ;
 +----------------+-----------------------------------------------------------------------------------------------------------------------+
 ; Device         ; EP2C20F484C7                                                                                                          ;
-; JTAG usercode  ; 0x001B2510                                                                                                            ;
-; Checksum       ; 0x001B2510                                                                                                            ;
+; JTAG usercode  ; 0x001B374A                                                                                                            ;
+; Checksum       ; 0x001B374A                                                                                                            ;
 +----------------+-----------------------------------------------------------------------------------------------------------------------+
 
 
@@ -106,7 +106,7 @@ applicable agreement for further details.
 +--------------------+-------------------------------------------------------------------------------------------------------------------+
 ; Device             ; EPCS16                                                                                                            ;
 ; JTAG usercode      ; 0x00000000                                                                                                        ;
-; Checksum           ; 0x1DD99632                                                                                                        ;
+; Checksum           ; 0x1DD8F6CD                                                                                                        ;
 ; Compression Ratio  ; 3                                                                                                                 ;
 +--------------------+-------------------------------------------------------------------------------------------------------------------+
 
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Oct 01 15:10:02 2017
+    Info: Processing started: Mon Oct 02 14:26:33 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off LAB1 -c LAB1
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 437 megabytes
-    Info: Processing ended: Sun Oct 01 15:10:07 2017
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Mon Oct 02 14:26:39 2017
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
 

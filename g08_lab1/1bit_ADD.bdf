@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 24 208 40)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A" (rect 5 0 14 12)(font "Arial" ))
+	(text "A" (rect 5 0 13 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 48 208 64)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "B" (rect 5 0 13 12)(font "Arial" ))
+	(text "B" (rect 5 0 12 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 72 208 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Cin" (rect 5 0 22 12)(font "Arial" ))
+	(text "Cin" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 416 184 592 200)
+	(rect 608 128 784 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SUM" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 472 280 648 296)
+	(rect 608 224 784 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Cout" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
@@ -100,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 192 96 256 144)
+	(rect 328 40 392 88)
 	(text "XOR" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 37 20 49)(font "Arial" ))
 	(port
@@ -134,7 +134,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 312 168 376 216)
+	(rect 448 112 512 160)
 	(text "XOR" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -168,7 +168,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 312 240 376 288)
+	(rect 448 184 512 232)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -200,7 +200,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 312 288 376 336)
+	(rect 448 232 512 280)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -232,7 +232,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 400 264 464 312)
+	(rect 536 208 600 256)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -265,85 +265,85 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 312 120)
-	(pt 312 184)
+	(text "A" (rect 282 40 290 52)(font "Arial" ))
+	(pt 328 56)
+	(pt 272 56)
 )
 (connector
-	(text "A" (rect 146 96 154 108)(font "Arial" ))
-	(pt 192 112)
-	(pt 136 112)
+	(text "B" (rect 282 56 289 68)(font "Arial" ))
+	(pt 328 72)
+	(pt 272 72)
 )
 (connector
-	(text "B" (rect 146 112 153 124)(font "Arial" ))
-	(pt 192 128)
-	(pt 136 128)
+	(pt 408 144)
+	(pt 408 216)
 )
 (connector
-	(pt 376 192)
-	(pt 416 192)
+	(pt 408 216)
+	(pt 448 216)
 )
 (connector
-	(pt 280 120)
-	(pt 280 256)
+	(pt 416 200)
+	(pt 448 200)
 )
 (connector
-	(pt 256 120)
-	(pt 280 120)
+	(pt 512 208)
+	(pt 536 208)
 )
 (connector
-	(pt 280 120)
-	(pt 312 120)
+	(pt 536 208)
+	(pt 536 224)
 )
 (connector
-	(pt 272 200)
-	(pt 272 272)
+	(pt 512 256)
+	(pt 536 256)
 )
 (connector
-	(pt 272 272)
-	(pt 312 272)
+	(pt 536 256)
+	(pt 536 240)
 )
 (connector
-	(text "Cin" (rect 146 184 162 196)(font "Arial" ))
-	(pt 312 200)
-	(pt 272 200)
+	(text "A" (rect 418 232 426 244)(font "Arial" ))
+	(pt 448 248)
+	(pt 408 248)
 )
 (connector
-	(pt 272 200)
-	(pt 136 200)
+	(text "B" (rect 418 248 425 260)(font "Arial" ))
+	(pt 408 264)
+	(pt 448 264)
 )
 (connector
-	(pt 280 256)
-	(pt 312 256)
+	(pt 600 232)
+	(pt 608 232)
 )
 (connector
-	(pt 376 264)
-	(pt 400 264)
+	(pt 512 136)
+	(pt 608 136)
 )
 (connector
-	(pt 400 264)
-	(pt 400 280)
+	(pt 448 64)
+	(pt 448 128)
 )
 (connector
-	(pt 376 312)
-	(pt 400 312)
+	(pt 392 64)
+	(pt 416 64)
 )
 (connector
-	(pt 400 312)
-	(pt 400 296)
+	(pt 416 64)
+	(pt 448 64)
 )
 (connector
-	(text "A" (rect 282 288 290 300)(font "Arial" ))
-	(pt 312 304)
-	(pt 272 304)
+	(text "Cin" (rect 282 128 298 140)(font "Arial" ))
+	(pt 272 144)
+	(pt 408 144)
 )
 (connector
-	(text "B" (rect 282 304 289 316)(font "Arial" ))
-	(pt 272 320)
-	(pt 312 320)
+	(pt 408 144)
+	(pt 448 144)
 )
 (connector
-	(pt 464 288)
-	(pt 472 288)
+	(pt 416 64)
+	(pt 416 200)
 )
-(junction (pt 280 120))
-(junction (pt 272 200))
+(junction (pt 416 64))
+(junction (pt 408 144))
