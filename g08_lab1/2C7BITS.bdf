@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -88 -208 80 -192)
+	(rect -48 -160 120 -144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "IN[6..0]" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 -120 824 -104)
+	(rect 528 -160 704 -144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "OUT[6..0]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
