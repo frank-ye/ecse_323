@@ -19,7 +19,7 @@ entity g08_7_segment_decoder is
 end g08_7_segment_decoder;
 
 architecture g08_7_segment of g08_7_segment_decoder is
-	SIGNAL xcode : std_logic_vector(4 downto 0);
+   SIGNAL xcode : std_logic_vector(4 downto 0);
    begin
    xcode(4 downto 1) <= code; xcode(0) <= mode;
    WITH xcode SELECT

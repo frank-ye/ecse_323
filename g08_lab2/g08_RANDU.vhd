@@ -22,8 +22,8 @@ architecture random of g08_RANDU is
 	signal shift_left_17: std_logic_vector(31 downto 0);
 	signal shift_left_1: std_logic_vector(31 downto 0);
 	begin
-		shift_left_17(31 downto 16) <= seed(15 downto 0);
-		shift_left_17(15 downto 0) <= (others => '0');
+		shift_left_16(31 downto 16) <= seed(15 downto 0);
+		shift_left_16(15 downto 0) <= (others => '0');
 		shift_left_1(31 downto 1) <= seed(30 downto 0);
 		shift_left_1(0) <= '0';
 		u1: lpm_add_sub
