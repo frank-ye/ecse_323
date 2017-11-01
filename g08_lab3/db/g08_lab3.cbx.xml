@@ -72,11 +72,11 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|BUSMUX:inst70|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|LPM_FF:inst14|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_o84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|LPM_FF:inst50|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_394.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|lpm_constant:inst131" CBX_FILE_NAME="lpm_constant_jq4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|BUSMUX:inst44|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|BUSMUX:inst8|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|LPM_FF:inst33|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_r84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|g08_pop_enable:inst107|LPM_ROM:crc_table|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_k301.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|lpm_constant:inst132" CBX_FILE_NAME="lpm_constant_j44.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|BUSMUX:inst36|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|BUSMUX:inst72|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g08_stack52|lpm_counter0:inst108|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_p5j.tdf"/>

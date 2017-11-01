@@ -1,0 +1,19 @@
+# do g08_lab3.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module g08_lab3
+# ** Error: g08_lab3.vo(763): near ";": syntax error, unexpected ';'
+# ** Error: g08_lab3.vo(790): '\inst|inst47|dffs ' already declared in this scope (g08_lab3).
+# ** Error: g08_lab3.vo(791): '\inst|inst45|# -- Compiling module g08_lab3
+# ** Error: g08_lab3.vo(763): near ";": syntax error, unexpected ';'
+# ** Error: g08_lab3.vo(790): '\inst|inst47|dffs ' already declared in this scope (g08_lab3).
+# ** Error: g08_lab3.vo(791): '\inst|inst45|dffs ' already declared in this scope (g08_lab3).
+# ** Error: g08_lab3.vo(792): '\inst|inst42|dffs ' already declared in this scope (g08_lab3).
+# ** Error: g08_lab3.vo(793): '\inst|inst41|dffs ' already declared in this scope (g08_lab3).
+# ** Error: g08_lab3.vo(798): (vlog-2730) Undefined variable: '\inst|inst107|crc_table|srom|rom_block|auto_generated|q_a '.
+# 
+# ** Error: g08_lab3.vo(928): (vlog-2730) Undefined variable: '\inst|inst101|dffs '.
+# 
+# ** Error: g08_lab3.vo(941): (vlog-2730) Undefined variable: '\inst|inst103|dffs '.
+# 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./g08_lab3.do line 3
