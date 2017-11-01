@@ -51,6 +51,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 720 -40 896 -24)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "FLOOR[3..0]" (rect 90 0 153 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 224 32 368 128)
 	(text "FLOOR13" (rect 5 0 60 14)(font "Arial" (font_size 8)))
@@ -334,10 +350,22 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
-(connector
-	(pt 432 64)
-	(pt 368 64)
-	(bus)
+(symbol
+	(rect 120 176 152 208)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
 )
 (connector
 	(pt 576 64)
@@ -468,5 +496,32 @@ applicable agreement for further details.
 	(pt 256 416)
 	(pt 448 416)
 )
+(connector
+	(pt 432 64)
+	(pt 400 64)
+	(bus)
+)
+(connector
+	(pt 400 64)
+	(pt 368 64)
+	(bus)
+)
+(connector
+	(text "GND" (rect 120 139 132 163)(font "Arial" )(vertical))
+	(pt 136 144)
+	(pt 136 176)
+)
+(connector
+	(pt 400 -32)
+	(pt 720 -32)
+	(bus)
+)
+(connector
+	(text "GND, FLOOR[2..0]" (rect 406 -40 418 55)(font "Arial" )(vertical))
+	(pt 400 -32)
+	(pt 400 64)
+	(bus)
+)
 (junction (pt 256 288))
 (junction (pt 256 416))
+(junction (pt 400 64))
