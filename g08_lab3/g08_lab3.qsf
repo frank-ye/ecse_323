@@ -126,4 +126,10 @@ set_location_assignment PIN_V19 -to ADDR_L3
 set_location_assignment PIN_T18 -to ADDR_L2
 set_location_assignment PIN_Y19 -to ADDR_L1
 set_location_assignment PIN_U19 -to ADDR_L0
+set_location_assignment PIN_U22 -to NUMS[0]
+set_location_assignment PIN_U21 -to NUMS[1]
+set_location_assignment PIN_V22 -to NUMS[2]
+set_location_assignment PIN_V21 -to NUMS[3]
+set_location_assignment PIN_W22 -to NUMS[4]
+set_location_assignment PIN_W21 -to NUMS[5]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

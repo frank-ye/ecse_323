@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g08_lab3
-Wed Nov 01 23:30:20 2017
+Thu Nov 02 00:29:23 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -157,16 +157,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 01 23:30:20 2017      ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 02 00:29:23 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; g08_lab3                                   ;
 ; Top-level Entity Name              ; g08_pulseEnabler                           ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 686                                        ;
-;     Total combinational functions  ; 686                                        ;
+; Total logic elements               ; 685                                        ;
+;     Total combinational functions  ; 685                                        ;
 ;     Dedicated logic registers      ; 339                                        ;
 ; Total registers                    ; 339                                        ;
-; Total pins                         ; 33                                         ;
+; Total pins                         ; 39                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 3,328                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -342,29 +342,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 686   ;
+; Estimated Total logic elements              ; 685   ;
 ;                                             ;       ;
-; Total combinational functions               ; 686   ;
+; Total combinational functions               ; 685   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 265   ;
-;     -- 3 input functions                    ; 382   ;
+;     -- 4 input functions                    ; 258   ;
+;     -- 3 input functions                    ; 388   ;
 ;     -- <=2 input functions                  ; 39    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 661   ;
+;     -- normal mode                          ; 660   ;
 ;     -- arithmetic mode                      ; 25    ;
 ;                                             ;       ;
 ; Total registers                             ; 339   ;
 ;     -- Dedicated logic registers            ; 339   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 33    ;
+; I/O pins                                    ; 39    ;
 ; Total memory bits                           ; 3328  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 391   ;
-; Total fan-out                               ; 4529  ;
-; Average fan-out                             ; 4.08  ;
+; Total fan-out                               ; 4525  ;
+; Average fan-out                             ; 4.06  ;
 +---------------------------------------------+-------+
 
 
@@ -373,22 +373,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                          ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g08_pulseEnabler                                  ; 686 (1)           ; 339 (0)      ; 3328        ; 0            ; 0       ; 0         ; 33   ; 0            ; |g08_pulseEnabler                                                                                                                            ;              ;
+; |g08_pulseEnabler                                  ; 685 (1)           ; 339 (0)      ; 3328        ; 0            ; 0       ; 0         ; 39   ; 0            ; |g08_pulseEnabler                                                                                                                            ;              ;
 ;    |7segment_decoder:inst4|                        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|7segment_decoder:inst4                                                                                                     ;              ;
 ;       |g08_7_segment_decoder:inst|                 ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|7segment_decoder:inst4|g08_7_segment_decoder:inst                                                                          ;              ;
 ;    |7segment_decoder:inst5|                        ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|7segment_decoder:inst5                                                                                                     ;              ;
 ;       |g08_7_segment_decoder:inst|                 ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|7segment_decoder:inst5|g08_7_segment_decoder:inst                                                                          ;              ;
-;    |MOD13:inst1|                                   ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1                                                                                                                ;              ;
-;       |2C7BITS:inst5|                              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|2C7BITS:inst5                                                                                                  ;              ;
-;          |g08_adder:inst|                          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|2C7BITS:inst5|g08_adder:inst                                                                                   ;              ;
-;             |1bit_ADD:inst9|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9                                                                    ;              ;
-;       |FLOOR13:inst|                               ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst                                                                                                   ;              ;
-;          |g08_adder:inst|                          ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst                                                                                    ;              ;
-;             |1bit_ADD:inst12|                      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12                                                                    ;              ;
+;    |MOD13:inst1|                                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1                                                                                                                ;              ;
+;       |FLOOR13:inst|                               ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst                                                                                                   ;              ;
+;          |g08_adder:inst|                          ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst                                                                                    ;              ;
+;             |1bit_ADD:inst10|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10                                                                    ;              ;
+;             |1bit_ADD:inst11|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11                                                                    ;              ;
+;             |1bit_ADD:inst12|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12                                                                    ;              ;
 ;             |1bit_ADD:inst13|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13                                                                    ;              ;
 ;             |1bit_ADD:inst14|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14                                                                    ;              ;
-;       |g08_adder:inst7|                            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|g08_adder:inst7                                                                                                ;              ;
-;          |1bit_ADD:inst10|                         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|g08_adder:inst7|1bit_ADD:inst10                                                                                ;              ;
+;       |g08_adder:inst7|                            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|g08_adder:inst7                                                                                                ;              ;
+;          |1bit_ADD:inst10|                         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|g08_adder:inst7|1bit_ADD:inst10                                                                                ;              ;
 ;          |1bit_ADD:inst7|                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|g08_adder:inst7|1bit_ADD:inst7                                                                                 ;              ;
 ;          |1bit_ADD:inst9|                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|g08_adder:inst7|1bit_ADD:inst9                                                                                 ;              ;
 ;          |1bit_ADD:inst|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|MOD13:inst1|g08_adder:inst7|1bit_ADD:inst                                                                                  ;              ;
@@ -399,7 +398,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_counter1:inst3|                         ; 24 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_pulseGenerator:inst|lpm_counter1:inst3                                                                                 ;              ;
 ;          |lpm_counter:LPM_COUNTER_component|       ; 24 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_pulseGenerator:inst|lpm_counter1:inst3|lpm_counter:LPM_COUNTER_component                                               ;              ;
 ;             |cntr_ipi:auto_generated|              ; 24 (24)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_pulseGenerator:inst|lpm_counter1:inst3|lpm_counter:LPM_COUNTER_component|cntr_ipi:auto_generated                       ;              ;
-;    |g08_stack52:inst2|                             ; 626 (5)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2                                                                                                          ;              ;
+;    |g08_stack52:inst2|                             ; 624 (5)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2                                                                                                          ;              ;
 ;       |busmux:inst100|                             ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|busmux:inst100                                                                                           ;              ;
 ;          |lpm_mux:$00000|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|busmux:inst100|lpm_mux:$00000                                                                            ;              ;
 ;             |mux_qmc:auto_generated|               ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|busmux:inst100|lpm_mux:$00000|mux_qmc:auto_generated                                                     ;              ;
@@ -619,9 +618,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_ff:inst99|                              ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_ff:inst99                                                                                            ;              ;
 ;       |lpm_ff:inst9|                               ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_ff:inst9                                                                                             ;              ;
 ;       |lpm_ff:inst|                                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_ff:inst                                                                                              ;              ;
-;       |lpm_mux0:inst1|                             ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux0:inst1                                                                                           ;              ;
-;          |lpm_mux:LPM_MUX_component|               ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux0:inst1|lpm_mux:LPM_MUX_component                                                                 ;              ;
-;             |mux_v4e:auto_generated|               ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux0:inst1|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                          ;              ;
+;       |lpm_mux0:inst1|                             ; 247 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux0:inst1                                                                                           ;              ;
+;          |lpm_mux:LPM_MUX_component|               ; 247 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux0:inst1|lpm_mux:LPM_MUX_component                                                                 ;              ;
+;             |mux_v4e:auto_generated|               ; 247 (247)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux0:inst1|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                          ;              ;
 ;       |lpm_mux1:inst130|                           ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux1:inst130                                                                                         ;              ;
 ;          |lpm_mux:LPM_MUX_component|               ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux1:inst130|lpm_mux:LPM_MUX_component                                                               ;              ;
 ;             |mux_p4e:auto_generated|               ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_pulseEnabler|g08_stack52:inst2|lpm_mux1:inst130|lpm_mux:LPM_MUX_component|mux_p4e:auto_generated                                        ;              ;
@@ -2397,7 +2396,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 01 23:29:52 2017
+    Info: Processing started: Thu Nov 02 00:28:54 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g08_lab3 -c g08_lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file 1bit_add.bdf
@@ -2455,14 +2454,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file g08_pul
 Info (12021): Found 1 design units, including 1 entities, in source file g08_pulseenabler.bdf
     Info (12023): Found entity 1: g08_pulseEnabler
 Info (12127): Elaborating entity "g08_pulseEnabler" for the top level hierarchy
-Info (12128): Elaborating entity "7segment_decoder" for hierarchy "7segment_decoder:inst4"
-Info (12128): Elaborating entity "g08_7_segment_decoder" for hierarchy "7segment_decoder:inst4|g08_7_segment_decoder:inst"
-Info (12128): Elaborating entity "MOD13" for hierarchy "MOD13:inst1"
-Info (12128): Elaborating entity "FLOOR13" for hierarchy "MOD13:inst1|FLOOR13:inst"
-Info (12128): Elaborating entity "g08_adder" for hierarchy "MOD13:inst1|FLOOR13:inst|g08_adder:inst"
-Info (12128): Elaborating entity "1bit_ADD" for hierarchy "MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14"
-Info (12128): Elaborating entity "2C7BITS" for hierarchy "MOD13:inst1|2C7BITS:inst5"
-Info (12128): Elaborating entity "TIME13" for hierarchy "MOD13:inst1|TIME13:inst3"
 Info (12128): Elaborating entity "g08_stack52" for hierarchy "g08_stack52:inst2"
 Warning (275004): Undeclared parameter DFF
 Warning (275006): Can't find a definition for parameter LPM_FFTYPE -- assuming DFF was intended to be a quoted string
@@ -3262,6 +3253,14 @@ Info (12133): Instantiated megafunction "g08_pulseGenerator:inst|lpm_compare2:in
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_3oi.tdf
     Info (12023): Found entity 1: cmpr_3oi
 Info (12128): Elaborating entity "cmpr_3oi" for hierarchy "g08_pulseGenerator:inst|lpm_compare2:inst7|lpm_compare:LPM_COMPARE_component|cmpr_3oi:auto_generated"
+Info (12128): Elaborating entity "7segment_decoder" for hierarchy "7segment_decoder:inst4"
+Info (12128): Elaborating entity "g08_7_segment_decoder" for hierarchy "7segment_decoder:inst4|g08_7_segment_decoder:inst"
+Info (12128): Elaborating entity "MOD13" for hierarchy "MOD13:inst1"
+Info (12128): Elaborating entity "FLOOR13" for hierarchy "MOD13:inst1|FLOOR13:inst"
+Info (12128): Elaborating entity "g08_adder" for hierarchy "MOD13:inst1|FLOOR13:inst|g08_adder:inst"
+Info (12128): Elaborating entity "1bit_ADD" for hierarchy "MOD13:inst1|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14"
+Info (12128): Elaborating entity "2C7BITS" for hierarchy "MOD13:inst1|2C7BITS:inst5"
+Info (12128): Elaborating entity "TIME13" for hierarchy "MOD13:inst1|TIME13:inst3"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "g08_stack52:inst2|g08_pop_enable:inst107|lpm_rom:crc_table|otri[51]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "g08_stack52:inst2|g08_pop_enable:inst107|lpm_rom:crc_table|otri[50]" feeding internal logic into a wire
@@ -3319,15 +3318,15 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "SEG_1[6]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 771 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 776 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 686 logic cells
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 685 logic cells
     Info (21064): Implemented 52 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 265 warnings
-    Info: Peak virtual memory: 569 megabytes
-    Info: Processing ended: Wed Nov 01 23:30:20 2017
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 577 megabytes
+    Info: Processing ended: Thu Nov 02 00:29:23 2017
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:25
 
 
