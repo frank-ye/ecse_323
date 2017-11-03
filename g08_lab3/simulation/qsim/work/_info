@@ -2,4 +2,160 @@ m255
 K3
 13
 cModel Technology
-dI:\g08_lab3\simulation\qsim
+Z0 dI:\g08_lab3\simulation\qsim
+vg08_pulseGenerator
+Z1 !s100 i0DO4EoXjUW_^o>=OLA921
+Z2 IzUN]`KE?X>OmlVL81IGRL1
+Z3 VN[Q[dnd0PTNC8kPzW2`GY0
+Z4 dC:\Users\Frank\Desktop\My Stuff\School Files\Semester 5\ECSE 323\Labs\Assignments\g08_lab3\simulation\qsim
+Z5 w1509668178
+Z6 8g08_lab3.vo
+Z7 Fg08_lab3.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|g08_lab3.vo|
+Z10 o-work work -O0
+Z11 ng08_pulse@generator
+Z12 !s108 1509668181.004000
+Z13 !s107 g08_lab3.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vg08_pulseGenerator_vlg_check_tst
+Z14 !s100 O4]>nRRi[0<QS@@YF=:d>2
+Z15 IRQR@lSdWiF]e>^mdlONQ`3
+Z16 VOKF^mAf1PQ[kA3Z7gkhz42
+R4
+Z17 w1509668176
+Z18 8g08_lab3.vt
+Z19 Fg08_lab3.vt
+L0 59
+R8
+r1
+31
+Z20 !s108 1509668181.341000
+Z21 !s107 g08_lab3.vt|
+Z22 !s90 -work|work|g08_lab3.vt|
+R10
+Z23 ng08_pulse@generator_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vg08_pulseGenerator_vlg_sample_tst
+Z24 !s100 AI8l:aWO@[HklNFV^3:Y>2
+Z25 IBS3B]K=3b]@A=?iT8GV6@1
+Z26 VX9202m@hiF<F?aS@hFf=50
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 ng08_pulse@generator_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vg08_pulseGenerator_vlg_vec_tst
+Z28 I5=_9]^O[97<O1<Ko3cT9S2
+Z29 VP6dmd5hIlV6H89XfUlk[S1
+R4
+R17
+R18
+R19
+Z30 L0 540
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z31 ng08_pulse@generator_vlg_vec_tst
+Z32 !s100 NV^[Y1Yg8zZiaD_J8eicJ2
+!i10b 1
+!s85 0
+!s101 -O0
+vg08_stack52
+Z33 IAcoV4iT^Lh]@ML;aOQgDE0
+Z34 Vc]CGBYYH7Ji:]e2R;^ezi1
+R4
+Z35 w1509670050
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z36 !s100 bT<B4=2=D?XU`AhooU:]02
+!s85 0
+Z37 !s108 1509670052.878000
+R13
+!s101 -O0
+vg08_stack52_vlg_check_tst
+!i10b 1
+Z38 !s100 eBjJe4EUD15<im][feWe^2
+Z39 Ii;RZbog@Q?[65oT;;jAe92
+Z40 VkBbH[5Fh4_]0@;7HR1=DU2
+R4
+Z41 w1509670047
+R18
+R19
+L0 67
+R8
+r1
+!s85 0
+31
+Z42 !s108 1509670053.691000
+Z43 !s107 g08_lab3.vt|
+R22
+!s101 -O0
+R10
+vg08_stack52_vlg_sample_tst
+!i10b 1
+Z44 !s100 Wf=cP4N9Z7g6;_]O?;o2N0
+Z45 IZF6i61ZnQMHcY`^T0`lFj1
+Z46 V1[3bFlBZCR^@mRl^YniA:0
+R4
+R41
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R42
+R43
+R22
+!s101 -O0
+R10
+vg08_stack52_vlg_vec_tst
+!i10b 1
+!s100 O4g2c>EOm>9<hi[`YDK[f0
+IN3f<XLYR;nTfb]]V]H_S<0
+Z47 VM9`>NJaDRBkONH>aJ^YE_2
+R4
+R41
+R18
+R19
+Z48 L0 1379
+R8
+r1
+!s85 0
+31
+R42
+R43
+R22
+!s101 -O0
+R10
