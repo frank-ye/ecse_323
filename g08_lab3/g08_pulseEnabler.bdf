@@ -123,7 +123,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 328 40 504 56)
+	(rect 432 40 608 56)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SEG_1[6..0]" (rect 90 0 150 12)(font "Arial" ))
 	(pt 0 8)
@@ -136,11 +136,11 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 504 24 560 40))
+	(annotation_block (location)(rect 608 24 664 40))
 )
 (pin
 	(output)
-	(rect 328 64 504 80)
+	(rect 432 64 608 80)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SEG_2[6..0]" (rect 90 0 150 12)(font "Arial" ))
 	(pt 0 8)
@@ -153,7 +153,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 504 56 552 72))
+	(annotation_block (location)(rect 608 56 656 72))
 )
 (pin
 	(output)
@@ -293,7 +293,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 328 104 504 120)
+	(rect 432 104 608 120)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "NUMS[5..0]" (rect 90 0 147 12)(font "Arial" ))
 	(pt 0 8)
@@ -306,7 +306,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 512 104 568 120))
+	(annotation_block (location)(rect 616 104 672 120))
 )
 (pin
 	(output)
@@ -327,7 +327,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 40 840 56)
+	(rect 744 40 920 56)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "EMPTY" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
@@ -343,9 +343,25 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 64 840 80)
+	(rect 744 64 920 80)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "FULL" (rect 90 0 117 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 744 88 920 104)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "VALUE[5..0]" (rect 90 0 151 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -465,7 +481,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 976 168 1136 264)
+	(rect 1064 168 1224 264)
 	(text "MOD13" (rect 5 0 46 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -494,7 +510,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1256 120 1472 216)
+	(rect 1344 120 1560 216)
 	(text "7segment_decoder" (rect 5 0 114 14)(font "Arial" (font_size 8)))
 	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -523,7 +539,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1256 232 1472 328)
+	(rect 1344 232 1560 328)
 	(text "7segment_decoder" (rect 5 0 114 14)(font "Arial" (font_size 8)))
 	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -662,11 +678,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 536 120 748 162))
 )
 (connector
-	(pt 888 200)
-	(pt 976 200)
-	(bus)
-)
-(connector
 	(text "CLK" (rect 680 264 701 276)(font "Arial" ))
 	(pt 704 280)
 	(pt 672 280)
@@ -678,62 +689,10 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1136 216)
-	(pt 1144 216)
-	(bus)
-)
-(connector
-	(pt 1136 200)
-	(pt 1144 200)
-	(bus)
-)
-(connector
 	(text "ADDR[5..0]" (rect 621 224 678 236)(font "Arial" ))
 	(pt 704 232)
 	(pt 680 232)
 	(bus)
-)
-(connector
-	(pt 1144 216)
-	(pt 1144 264)
-	(bus)
-)
-(connector
-	(pt 1144 200)
-	(pt 1144 152)
-	(bus)
-)
-(connector
-	(text "SEG_1[6..0]" (rect 1481 136 1541 148)(font "Arial" ))
-	(pt 1472 152)
-	(pt 1488 152)
-	(bus)
-)
-(connector
-	(text "SEG_2[6..0]" (rect 1480 248 1540 260)(font "Arial" ))
-	(pt 1472 264)
-	(pt 1488 264)
-	(bus)
-)
-(connector
-	(pt 1144 152)
-	(pt 1256 152)
-	(bus)
-)
-(connector
-	(pt 1144 264)
-	(pt 1256 264)
-	(bus)
-)
-(connector
-	(text "NUMMODE" (rect 1229 152 1285 164)(font "Arial" ))
-	(pt 1256 168)
-	(pt 1200 168)
-)
-(connector
-	(text "NUMMODE" (rect 1225 264 1281 276)(font "Arial" ))
-	(pt 1256 280)
-	(pt 1200 280)
 )
 (connector
 	(text "<<__$DEF_ALIAS1602>>" (rect 552 184 675 196)(font "Arial" )(invisible))
@@ -811,22 +770,6 @@ applicable agreement for further details.
 	(pt 288 424)
 )
 (connector
-	(text "NUMS[5..0]" (rect 912 232 969 244)(font "Arial" ))
-	(pt 888 248)
-	(pt 944 248)
-	(bus)
-)
-(connector
-	(text "EMPTY" (rect 910 200 946 212)(font "Arial" ))
-	(pt 888 216)
-	(pt 920 216)
-)
-(connector
-	(text "FULL" (rect 904 216 931 228)(font "Arial" ))
-	(pt 888 232)
-	(pt 920 232)
-)
-(connector
 	(text "ENABLE" (rect 672 232 714 244)(font "Arial" ))
 	(pt 704 248)
 	(pt 664 248)
@@ -849,4 +792,78 @@ applicable agreement for further details.
 	(text "ENABLE" (rect 456 264 498 276)(font "Arial" ))
 	(pt 448 280)
 	(pt 480 280)
+)
+(connector
+	(pt 1224 216)
+	(pt 1232 216)
+	(bus)
+)
+(connector
+	(pt 1224 200)
+	(pt 1232 200)
+	(bus)
+)
+(connector
+	(pt 1232 216)
+	(pt 1232 264)
+	(bus)
+)
+(connector
+	(pt 1232 200)
+	(pt 1232 152)
+	(bus)
+)
+(connector
+	(text "SEG_1[6..0]" (rect 1569 136 1629 148)(font "Arial" ))
+	(pt 1560 152)
+	(pt 1576 152)
+	(bus)
+)
+(connector
+	(text "SEG_2[6..0]" (rect 1568 248 1628 260)(font "Arial" ))
+	(pt 1560 264)
+	(pt 1576 264)
+	(bus)
+)
+(connector
+	(text "NUMMODE" (rect 1317 152 1373 164)(font "Arial" ))
+	(pt 1344 168)
+	(pt 1288 168)
+)
+(connector
+	(text "NUMMODE" (rect 1313 264 1369 276)(font "Arial" ))
+	(pt 1344 280)
+	(pt 1288 280)
+)
+(connector
+	(pt 1232 152)
+	(pt 1344 152)
+	(bus)
+)
+(connector
+	(pt 1232 264)
+	(pt 1344 264)
+	(bus)
+)
+(connector
+	(text "VALUE[5..0]" (rect 924 184 985 196)(font "Arial" ))
+	(pt 888 200)
+	(pt 1064 200)
+	(bus)
+)
+(connector
+	(text "FULL" (rect 904 216 931 228)(font "Arial" ))
+	(pt 888 232)
+	(pt 920 232)
+)
+(connector
+	(text "NUMS[5..0]" (rect 912 232 969 244)(font "Arial" ))
+	(pt 888 248)
+	(pt 944 248)
+	(bus)
+)
+(connector
+	(text "EMPTY" (rect 910 200 946 212)(font "Arial" ))
+	(pt 888 216)
+	(pt 920 216)
 )
