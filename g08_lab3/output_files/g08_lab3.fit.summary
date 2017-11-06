@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Nov 02 23:51:00 2017
+Fitter Status : Successful - Mon Nov 06 14:56:59 2017
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : g08_lab3
 Top-level Entity Name : g08_pulseEnabler
 Family : Cyclone II
 Device : EP2C20F484C7
 Timing Models : Final
-Total logic elements : 1,435 / 18,752 ( 8 % )
-    Total combinational functions : 1,138 / 18,752 ( 6 % )
+Total logic elements : 1,434 / 18,752 ( 8 % )
+    Total combinational functions : 1,140 / 18,752 ( 6 % )
     Dedicated logic registers : 879 / 18,752 ( 5 % )
 Total registers : 879
 Total pins : 49 / 315 ( 16 % )

@@ -168,7 +168,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -32 40 144 56)
+	(rect -32 48 144 64)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "VALUE[5..0]" (rect 90 0 151 12)(font "Arial" ))
 	(pt 0 8)
