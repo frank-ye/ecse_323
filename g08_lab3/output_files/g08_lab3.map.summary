@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Nov 06 14:56:33 2017
+Analysis & Synthesis Status : Successful - Fri Nov 10 17:52:29 2017
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : g08_lab3
 Top-level Entity Name : g08_pulseEnabler
 Family : Cyclone II
-Total logic elements : 1,439
-    Total combinational functions : 1,139
+Total logic elements : 1,442
+    Total combinational functions : 1,142
     Dedicated logic registers : 879
 Total registers : 879
 Total pins : 49

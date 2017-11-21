@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="g08_lab2">
-		<CBX_INST_ENTRY INSTANCE_NAME="|random|g08_RANDU:inst|LPM_ADD_SUB:u1" CBX_FILE_NAME="add_sub_ree.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|random|g08_RANDU:inst|LPM_ADD_SUB:u2" CBX_FILE_NAME="add_sub_ree.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
