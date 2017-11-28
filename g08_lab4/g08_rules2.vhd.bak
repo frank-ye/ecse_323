@@ -1,0 +1,66 @@
+-- this circuit implements the rules of the card game 21
+--- entity name: g08_rules
+--- Copyright (C) 2017 Tiffany WANG, Frank YE
+-- Version 1.0 
+-- Author: Tiffany WANG, Frank YE; tiffany.wang@mail.mcgill.ca, frank.ye@mail.mcgill.ca
+-- Date: 14 Nov 2017
+
+library ieee;
+use ieee.std_logic_1164.all;
+--use ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity g08_rules is
+port (play_pile_top_card : in std_logic_vector(5 downto 0);
+		card_to_play : in std_logic_vector(5 downto 0);
+		legal_play : out std_logic);
+end g08_rules;
+
+
+architecture rules of g08_rules is
+-- keep total amount of running games one, use as constraint for enable.
+-- need a flag for between games because need to shuffle deck
+	variable temp_top, temp_ctp: unsigned(3 downto 0); -- temp values to treat J,Q,K
+	variable suit: std_logic_vector(3 downto 0);
+	variable sum: unsigned(5 downto 0); -- use this value to check if play is legal 
+	variable decoded_value_top: unsigned(5 downto 0); -- decoded blackjack value of cards
+	variable ctp: unsigned(5 downto 0);
+	variable decoded_value_ctp: STD_LOGIC_VECTOR(3 downto 0); -- decoded blackjack value of cards
+	component MOD13
+	PORT(A: IN STD_LOGIC_VECTOR(5 downto 0);
+			FLOOR: OUT STD_LOGIC_VECTOR(3 downto 0);
+			OUTPUT: OUT STD_LOGIC_VECTOR(3 downto 0)
+			);
+		
+	end component; 
+	
+	begin
+		--u1 : MOD13 
+			--PORT MAP ( A => card_to_play, FLOOR => suit, OUTPUT => decoded_value_ctp );
+			
+		--u2 : MOD13 
+			--PORT MAP ( A => play_pile_top_card, FLOOR => decoded_value_top, OUTPUT => suit );
+			
+		check : process(card_to_play, play_pile_top_card)
+		begin
+			decoded_value_top <= unsigned(play_pile_top_card) ;
+			ctp <= unsigned('0' & '0' & decoded_value_ctp);
+			if(decoded_value_ctp > 9) then
+				temp_ctp <= to_unsigned(10, 4);
+			else
+				temp_ctp <= unsigned(decoded_value_ctp);
+			end if; 
+			
+			sum <= (unsigned(play_pile_top_card) + temp_ctp);
+			
+			if(sum < 20) then
+				legal_play <= '1';
+			else
+				legal_play <= '0';
+			end if;
+			--play_pile_top_card <= sum;
+		end process;
+
+end rules;

@@ -1,0 +1,54 @@
+-- this circuit implements the rules of the card game 21
+--- entity name: g08_rules
+--- Copyright (C) 2017 Tiffany WANG, Frank YE
+-- Version 1.0 
+-- Author: Tiffany WANG, Frank YE; tiffany.wang@mail.mcgill.ca, frank.ye@mail.mcgill.ca
+-- Date: 14 Nov 2017
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+-- First, explicitly declare the DFF entity-architecture pair.
+entity DFFex is
+port (data, reset : in std_logic;
+			  kronus : in std_logic;
+					 q : out std_logic);
+end;
+
+architecture rtl of DFFex is
+
+	process(kronus, reset) -- sensitivity list (arguments)
+		begin
+	if reset = '1' then
+		q<='0'; -- Asynchronous reset asserted this is real feature
+			elsif kronus'event and kronus = '1' then
+				q<= data; -- Load new value into flip flop
+	end if;
+-- kronus'event is a qualifier. If there is ambiguity about which data type or value tool
+--may generate an error, the qualifier ' will specify in this case that an event i.e. change
+--has occurred and that the changed value is 1 for kronus. Steady state is not an event
+ q<= data; -- Load new value into flip flop
+end if;
+end process;
+end rtl;
+
+entity g08_rules is
+port (play_pile_top_card : in std_logic_vector(5 downto 0);
+		card_to_play : in std_logic_vector(5 downto 0);
+		legal_play : out std_logic);
+end g08_rules;
+
+
+architecture rules of g08_rules is
+-- keep total amount of running games one, use as constraint for enable.
+-- need a flag for between games because need to shuffle deck
+	signal temp_top, temp_ctp: std_logic_vector(5 downto 0); -- temp values to treat J,Q,K
+	signal sum: std_logic_vector(5 downto 0); -- use this value to check if play is legal 
+	begin
+		if(card_to_play > '1010') then
+			temp_ctp <= '001010';
+		sum <= (temp_top + temp_ctp);
+
+end rules;

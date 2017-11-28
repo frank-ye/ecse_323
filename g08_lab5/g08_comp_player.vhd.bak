@@ -1,0 +1,69 @@
+-- this circuit implements the computer player FSM
+--- entity name: g08_computer
+--- Copyright (C) 2017 Tiffany WANG, Frank YE
+-- Version 1.0 
+-- Author: Tiffany WANG, Frank YE; tiffany.wang@mail.mcgill.ca, frank.ye@mail.mcgill.ca
+-- Date: 26 Nov 2017
+
+library ieee;
+use ieee.std_logic_1164.all;
+--use ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity comp_player is
+port (-- CHANGE THE PORTS
+		-- INSERT PORTS HERE XDDD
+		);
+end comp_player;
+
+architecture computer of comp_player is
+TYPE state_signal IS (A, B, C); -- 3 states from state transition diagram
+SIGNAL state: state_signal;
+begin
+
+state_update : process(clk, reset)
+	begin
+		if reset = '1' then
+			state <= A;
+		elsif clk'EVENT and clk = '1' then
+			case state is
+				when A =>
+					if request_deal = '0' then state <= B; -- wait for HIT_LOW
+					else state <= A;
+					end if;
+				
+				when B =>
+					if request_deal = '1' then state <= C; -- wait for HIT_HIGH
+					else state <= B;
+					end if;	
+				when C => 
+					-- do something that will output
+					if random_lt_num = '1' then state <= D; -- wait for rand_num < NUMS - 1 to change state.
+					else state <= C;
+					end if;
+					
+				when D =>
+					 state <= A; -- wait one clk cycle for card to be added (no "residue")
+			end case;
+		end if;
+ 	end process state_update;
+	
+output_logic : process(state) 
+	begin	
+	case state is
+		when A | B => 
+			rand_enable <= '0';
+			stack_enable <= '0';
+		when C =>
+			rand_enable <= '1';
+			stack_enable <= '0';
+		when D =>
+			rand_enable <= '0';
+			stack_enable <= '1';
+		when others =>
+			rand_enable <= '0';
+			stack_enable <= '0';
+	end case;
+end process output_logic;
+end computer;

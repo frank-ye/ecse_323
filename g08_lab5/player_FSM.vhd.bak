@@ -1,0 +1,31 @@
+-- this circuit implements the computer player FSM
+--- entity name: g08_system
+--- Copyright (C) 2017 Tiffany WANG, Frank YE
+-- Version 1.0 
+-- Author: Tiffany WANG, Frank YE; tiffany.wang@mail.mcgill.ca, frank.ye@mail.mcgill.ca
+-- Date: 27 Nov 2017
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity g08_system is
+port ( clk : in std_logic;
+		 -- INSERT PORTS
+end g08_system;
+
+architecture system_fsm of g08_system is
+TYPE state_signal IS (A, B, C, D, E); -- states from state transition diagram
+SIGNAL state: state_signal;
+		
+begin
+state_update : process(clk) -- MODIFY sensitivity list
+	-- DECLARE VARIABLES
+	begin
+	-- INSTANTIATE unsigned variables corresponding to variables above
+	if clk'EVENT and clk = '1' then
+			case state is 
+			when -- INSERT STATES
+			
+	

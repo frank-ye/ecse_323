@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Frank\Desktop\My Stuff\School Files\Semester 5\ECSE 323\Labs\Assignments\g08_lab4\simulation\qsim
+vg08_rules
+Z1 IV65Y6O;S3JMBHD:FhU]6f1
+Z2 VQlZ;NlYd0=zeAb[<Q_@gC2
+Z3 dC:\Users\Frank\Desktop\My Stuff\School Files\Semester 5\ECSE 323\Labs\Assignments\g08_lab4\simulation\qsim
+Z4 w1511207794
+Z5 8g08_lab4.vo
+Z6 Fg08_lab4.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 9ob^QCI1iU2>41a1iVdVg2
+Z10 !s108 1511207798.973000
+Z11 !s107 g08_lab4.vo|
+Z12 !s90 -work|work|g08_lab4.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vg08_rules_vlg_check_tst
+Z13 I=k=4ih0P:M@74=eAa^Bc42
+Z14 V=mQh4E4`]kf>GCjGLjXE;3
+R3
+Z15 w1511207793
+Z16 8g08_lab4.vt
+Z17 Fg08_lab4.vt
+L0 59
+R7
+r1
+31
+Z18 !s108 1511207799.364000
+Z19 !s107 g08_lab4.vt|
+Z20 !s90 -work|work|g08_lab4.vt|
+R8
+Z21 !s100 Rl]<?Qm46J3PH`B^_H=gf1
+!i10b 1
+!s85 0
+!s101 -O0
+vg08_rules_vlg_sample_tst
+Z22 IB9CL5T<G0Fhd>mZgNGBNb1
+Z23 V;ZAmiEhn]0>Y1IE6Q5?FU3
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z24 !s100 NaU;BokaJgQLEodRzb?@:2
+!i10b 1
+!s85 0
+!s101 -O0
+vg08_rules_vlg_vec_tst
+Z25 IlS1I3SibG55iUni92f_0N2
+Z26 V;DF5A@iUZNZ3TKEOTCH:D2
+R3
+R15
+R16
+R17
+Z27 L0 154
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z28 !s100 oG:jlh20_@a3cd1X22gaF3
+!i10b 1
+!s85 0
+!s101 -O0
+vtest_bed
+Z29 IG7EZX^[_6@XZCF5LL2amR0
+Z30 V;<XCl<`gnP:SIkmCYdKY:3
+R3
+Z31 w1511475625
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+!i10b 1
+Z32 !s100 1WLHCZ_;ReO6Ah2=iNe<e0
+!s85 0
+Z33 !s108 1511475627.605000
+R11
+!s101 -O0
+vtest_bed_vlg_check_tst
+!i10b 1
+Z34 !s100 ]>235A>Facl>M1VaQQ[Eb3
+Z35 I4izknialZGZUmZ;Q51Dha3
+Z36 Vnn]0X8SAKX9nW^7GZ2z441
+R3
+Z37 w1511475623
+R16
+R17
+L0 69
+R7
+r1
+!s85 0
+31
+Z38 !s108 1511475629.245000
+Z39 !s107 g08_lab4.vt|
+R20
+!s101 -O0
+R8
+vtest_bed_vlg_sample_tst
+!i10b 1
+Z40 !s100 nXT]ZRz;YKRk`@2c;<C7^0
+Z41 I;h=8^V17Zh;Y6URCa76DH3
+Z42 V>O4gWojg4_3Z`8mMZ@SII2
+R3
+R37
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R38
+R39
+R20
+!s101 -O0
+R8
+vtest_bed_vlg_vec_tst
+!i10b 1
+Z43 !s100 VjQE06@h]821ISfQMP]6M1
+Z44 I6c^XlY7EdA0aYW:7BEcAH3
+Z45 VcjHeT>9Bc2B9lPhM`9QB<1
+R3
+R37
+R16
+R17
+Z46 L0 679
+R7
+r1
+!s85 0
+31
+R38
+R39
+R20
+!s101 -O0
+R8
