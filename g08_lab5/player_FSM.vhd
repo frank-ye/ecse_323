@@ -40,31 +40,33 @@ state_update : process(clk, ACE_TOGGLE)
 	VARIABLE COUNTER: std_logic_vector(3 downto 0);
 	
 	begin
-	
-	COUNTER := ACE_COUNT_SIGNAL_IN AND ACE_TOGGLE;
-	case COUNTER is
-		when "0001" =>
-			SUM_PLAYER_IN := DEFAULT + to_unsigned(10, 6);
-		when  "0011" =>
-			SUM_PLAYER_IN := DEFAULT + to_unsigned(20, 6);
-		when  "0111" => 
-			SUM_PLAYER_IN := DEFAULT + to_unsigned(30, 6);
-		when  "1111" =>
-			SUM_PLAYER_IN := DEFAULT + to_unsigned(40, 6);
-		when others =>
-			SUM_PLAYER_IN := DEFAULT;
-	end case;
 		
 	-- INSTANTIATE unsigned variables corresponding to variables above
 	if clk'EVENT and clk = '1' then
+		COUNTER := ACE_COUNT_SIGNAL_IN AND ACE_TOGGLE;
+		case COUNTER is
+			when "0001" =>
+				SUM_PLAYER_IN := DEFAULT + to_unsigned(10, 6);
+			when  "0011" =>
+				SUM_PLAYER_IN := DEFAULT + to_unsigned(20, 6);
+			when  "0111" => 
+				SUM_PLAYER_IN := DEFAULT + to_unsigned(30, 6);
+			when  "1111" =>
+				SUM_PLAYER_IN := DEFAULT + to_unsigned(40, 6);
+			when others =>
+				SUM_PLAYER_IN := DEFAULT;
+		end case;
+		
 		case state is 
 			when A =>
 				DRAWS := '0';
 				--SUM_PLAYER_IN := to_unsigned(0);
 				ACE_COUNT := to_unsigned(0, 3);
 				default := to_unsigned(0, 6);
+				LEGAL_PLAY <= '1';
 				if DONE = '1' then 
 					state <= B;
+					TURN <= '1';
 				end if;
 			
 			when B =>

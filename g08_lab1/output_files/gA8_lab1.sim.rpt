@@ -1,5 +1,5 @@
 Simulator report for gA8_lab1
-Tue Oct 03 13:22:03 2017
+Wed Nov 29 15:07:55 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 640.0 ns     ;
-; Simulation Netlist Size     ; 50 nodes     ;
-; Simulation Coverage         ;      98.00 % ;
-; Total Number of Transitions ; 1328         ;
+; Simulation Netlist Size     ; 54 nodes     ;
+; Simulation Coverage         ;      96.30 % ;
+; Total Number of Transitions ; 1359         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
@@ -94,90 +94,96 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      98.00 % ;
-; Total nodes checked                                 ; 50           ;
-; Total output ports checked                          ; 50           ;
-; Total output ports with complete 1/0-value coverage ; 49           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 0            ;
-; Total output ports with no 0-value coverage         ; 1            ;
+; Total coverage as a percentage                      ;      96.30 % ;
+; Total nodes checked                                 ; 54           ;
+; Total output ports checked                          ; 54           ;
+; Total output ports with complete 1/0-value coverage ; 52           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 2            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                    ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
-; Node Name                                                                    ; Output Port Name                                                             ; Output Port Type ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
-; |g08_Modulo_13|MOD[3]                                                        ; |g08_Modulo_13|MOD[3]                                                        ; pin_out          ;
-; |g08_Modulo_13|MOD[2]                                                        ; |g08_Modulo_13|MOD[2]                                                        ; pin_out          ;
-; |g08_Modulo_13|MOD[1]                                                        ; |g08_Modulo_13|MOD[1]                                                        ; pin_out          ;
-; |g08_Modulo_13|MOD[0]                                                        ; |g08_Modulo_13|MOD[0]                                                        ; pin_out          ;
-; |g08_Modulo_13|A[4]                                                          ; |g08_Modulo_13|A[4]                                                          ; out              ;
-; |g08_Modulo_13|A[3]                                                          ; |g08_Modulo_13|A[3]                                                          ; out              ;
-; |g08_Modulo_13|A[2]                                                          ; |g08_Modulo_13|A[2]                                                          ; out              ;
-; |g08_Modulo_13|A[1]                                                          ; |g08_Modulo_13|A[1]                                                          ; out              ;
-; |g08_Modulo_13|A[0]                                                          ; |g08_Modulo_13|A[0]                                                          ; out              ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst5   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst5   ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst   ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst6  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst6  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst5  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst5  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst4  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst4  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst   ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst6  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst6  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst5  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst5  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst4  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst4  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst   ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst   ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst6  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst6  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst5  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst5  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst4  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst4  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst2  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst2  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst4  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst4  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst2  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst2  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst4  ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst4  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst    ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst    ; out0             ;
-; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst5   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst5   ; out0             ;
-; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst2  ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst2  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst   ; |g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst   ; out0             ;
-; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst2  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst2  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst4  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst4  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst2  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst2  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst4  ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst4  ; out0             ;
-; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10|inst2 ; |g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10|inst2 ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst                 ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst                 ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst5                ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst|inst5                ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst2               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst2               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst                ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst                ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst6               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst6               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst5               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst5               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst4               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7|inst4               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst2               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst2               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst                ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst                ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst6               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst6               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst5               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst5               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst4               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9|inst4               ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst10|inst2              ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst10|inst2              ; out0             ;
-; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst10|inst               ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst10|inst               ; out0             ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                              ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; Node Name                                                 ; Output Port Name                                          ; Output Port Type ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; |MOD13|FLOOR[2]                                           ; |MOD13|FLOOR[2]                                           ; pin_out          ;
+; |MOD13|FLOOR[1]                                           ; |MOD13|FLOOR[1]                                           ; pin_out          ;
+; |MOD13|FLOOR[0]                                           ; |MOD13|FLOOR[0]                                           ; pin_out          ;
+; |MOD13|A[4]                                               ; |MOD13|A[4]                                               ; out              ;
+; |MOD13|A[3]                                               ; |MOD13|A[3]                                               ; out              ;
+; |MOD13|A[2]                                               ; |MOD13|A[2]                                               ; out              ;
+; |MOD13|A[1]                                               ; |MOD13|A[1]                                               ; out              ;
+; |MOD13|A[0]                                               ; |MOD13|A[0]                                               ; out              ;
+; |MOD13|OUT[3]                                             ; |MOD13|OUT[3]                                             ; pin_out          ;
+; |MOD13|OUT[2]                                             ; |MOD13|OUT[2]                                             ; pin_out          ;
+; |MOD13|OUT[1]                                             ; |MOD13|OUT[1]                                             ; pin_out          ;
+; |MOD13|OUT[0]                                             ; |MOD13|OUT[0]                                             ; pin_out          ;
+; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst    ; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst    ; out0             ;
+; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst5   ; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9|inst5   ; out0             ;
+; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst2  ; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst2  ; out0             ;
+; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst   ; |MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10|inst   ; out0             ;
+; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst2  ; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst2  ; out0             ;
+; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst4  ; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7|inst4  ; out0             ;
+; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst2  ; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst2  ; out0             ;
+; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst4  ; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9|inst4  ; out0             ;
+; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10|inst2 ; |MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10|inst2 ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst|inst                 ; |MOD13|g08_adder:inst7|1bit_ADD:inst|inst                 ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst|inst5                ; |MOD13|g08_adder:inst7|1bit_ADD:inst|inst5                ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst2               ; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst2               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst                ; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst                ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst6               ; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst6               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst5               ; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst5               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst4               ; |MOD13|g08_adder:inst7|1bit_ADD:inst7|inst4               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst2               ; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst2               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst                ; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst                ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst6               ; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst6               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst5               ; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst5               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst4               ; |MOD13|g08_adder:inst7|1bit_ADD:inst9|inst4               ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst10|inst2              ; |MOD13|g08_adder:inst7|1bit_ADD:inst10|inst2              ; out0             ;
+; |MOD13|g08_adder:inst7|1bit_ADD:inst10|inst               ; |MOD13|g08_adder:inst7|1bit_ADD:inst10|inst               ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst5   ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9|inst5   ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst   ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst   ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst6  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst6  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst5  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst5  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst4  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10|inst4  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst   ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst   ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst6  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst6  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst5  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst5  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst4  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11|inst4  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst   ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst   ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst6  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst6  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst5  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst5  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst4  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12|inst4  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst2  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst2  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst4  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13|inst4  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst2  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst2  ; out0             ;
+; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst4  ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14|inst4  ; out0             ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++-------------------------------------------------------+
+; Missing 1-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |MOD13|FLOOR[3] ; |MOD13|FLOOR[3]  ; pin_out          ;
++-----------------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------+
-; Missing 0-Value Coverage                                     ;
-+---------------------+---------------------+------------------+
-; Node Name           ; Output Port Name    ; Output Port Type ;
-+---------------------+---------------------+------------------+
-; |g08_Modulo_13|A[5] ; |g08_Modulo_13|A[5] ; out              ;
-+---------------------+---------------------+------------------+
++-------------------------------------------------------+
+; Missing 0-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |MOD13|FLOOR[3] ; |MOD13|FLOOR[3]  ; pin_out          ;
+; |MOD13|A[5]     ; |MOD13|A[5]      ; out              ;
++-----------------+------------------+------------------+
 
 
 +---------------------+
@@ -193,18 +199,22 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 03 13:22:02 2017
+    Info: Processing started: Wed Nov 29 15:07:54 2017
 Info: Command: quartus_sim --simulation_results_format=VWF gA8_lab1 -c gA8_lab1
 Info (324025): Using vector source file "C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/g08_Modulo_13.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "MOD[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "MOD[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "MOD[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "MOD[0]" in design.
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      98.00 %
-Info (328052): Number of transitions in simulation is 1328
+Info (328053): Simulation coverage is      96.30 %
+Info (328052): Number of transitions in simulation is 1359
 Info (324045): Vector file gA8_lab1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 330 megabytes
-    Info: Processing ended: Tue Oct 03 13:22:03 2017
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 375 megabytes
+    Info: Processing ended: Wed Nov 29 15:07:55 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

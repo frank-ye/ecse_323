@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gA8_lab1
-Tue Oct 03 13:21:02 2017
+Wed Nov 29 15:07:33 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 03 13:21:02 2017      ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 29 15:07:33 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; gA8_lab1                                   ;
-; Top-level Entity Name              ; g08_Modulo_13                              ;
+; Top-level Entity Name              ; MOD13                                      ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 16                                         ;
-;     Total combinational functions  ; 16                                         ;
+; Total logic elements               ; 17                                         ;
+;     Total combinational functions  ; 17                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 10                                         ;
+; Total pins                         ; 14                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C20F484C7       ;                    ;
-; Top-level entity name                                                      ; g08_Modulo_13      ; gA8_lab1           ;
+; Top-level entity name                                                      ; MOD13              ; gA8_lab1           ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -143,30 +143,35 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; TIME13.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/TIME13.bdf        ;         ;
-; MOD13.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/MOD13.bdf         ;         ;
-; g08_Modulo_13.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/g08_Modulo_13.bdf ;         ;
-; FLOOR13.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/FLOOR13.bdf       ;         ;
-; 2C7BITS.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/2C7BITS.bdf       ;         ;
-; 1bit_ADD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/1bit_ADD.bdf      ;         ;
-; g08_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/g08_adder.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; TIME13.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/TIME13.bdf    ;         ;
+; MOD13.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/MOD13.bdf     ;         ;
+; FLOOR13.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/FLOOR13.bdf   ;         ;
+; 2C7BITS.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/2C7BITS.bdf   ;         ;
+; 1bit_ADD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/1bit_ADD.bdf  ;         ;
+; g08_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab1/g08_adder.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -174,50 +179,49 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 16    ;
+; Estimated Total logic elements              ; 17    ;
 ;                                             ;       ;
-; Total combinational functions               ; 16    ;
+; Total combinational functions               ; 17    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 10    ;
+;     -- 4 input functions                    ; 11    ;
 ;     -- 3 input functions                    ; 4     ;
 ;     -- <=2 input functions                  ; 2     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 16    ;
+;     -- normal mode                          ; 17    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 10    ;
+; I/O pins                                    ; 14    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; A[3]  ;
-; Maximum fan-out                             ; 7     ;
-; Total fan-out                               ; 60    ;
-; Average fan-out                             ; 2.31  ;
+; Maximum fan-out node                        ; A[4]  ;
+; Maximum fan-out                             ; 8     ;
+; Total fan-out                               ; 67    ;
+; Average fan-out                             ; 2.16  ;
 +---------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Library Name ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
-; |g08_Modulo_13                ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |g08_Modulo_13                                                        ;              ;
-;    |MOD13:inst|               ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst                                             ;              ;
-;       |FLOOR13:inst|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst                                ;              ;
-;          |g08_adder:inst|     ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst                 ;              ;
-;             |1bit_ADD:inst10| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10 ;              ;
-;             |1bit_ADD:inst12| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12 ;              ;
-;             |1bit_ADD:inst13| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13 ;              ;
-;             |1bit_ADD:inst14| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14 ;              ;
-;       |g08_adder:inst7|       ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7                             ;              ;
-;          |1bit_ADD:inst10|    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst10             ;              ;
-;          |1bit_ADD:inst7|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7              ;              ;
-;          |1bit_ADD:inst9|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9              ;              ;
-;          |1bit_ADD:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst               ;              ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
+; |MOD13                     ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |MOD13                                             ;              ;
+;    |FLOOR13:inst|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|FLOOR13:inst                                ;              ;
+;       |g08_adder:inst|     ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|FLOOR13:inst|g08_adder:inst                 ;              ;
+;          |1bit_ADD:inst10| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10 ;              ;
+;          |1bit_ADD:inst12| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12 ;              ;
+;          |1bit_ADD:inst13| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13 ;              ;
+;          |1bit_ADD:inst14| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14 ;              ;
+;    |g08_adder:inst7|       ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|g08_adder:inst7                             ;              ;
+;       |1bit_ADD:inst10|    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|g08_adder:inst7|1bit_ADD:inst10             ;              ;
+;       |1bit_ADD:inst7|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|g08_adder:inst7|1bit_ADD:inst7              ;              ;
+;       |1bit_ADD:inst9|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|g08_adder:inst7|1bit_ADD:inst9              ;              ;
+;       |1bit_ADD:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MOD13|g08_adder:inst7|1bit_ADD:inst               ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -241,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -251,9 +255,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 03 13:20:56 2017
+    Info: Processing started: Wed Nov 29 15:07:30 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gA8_lab1 -c gA8_lab1
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file time13.bdf
     Info (12023): Found entity 1: TIME13
 Info (12021): Found 1 design units, including 1 entities, in source file mod13.bdf
@@ -272,23 +276,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file ga8_com
     Info (12023): Found entity 1: gA8_comp7
 Info (12021): Found 1 design units, including 1 entities, in source file ga8_lab1.bdf
     Info (12023): Found entity 1: gA8_lab1
-Info (12127): Elaborating entity "g08_Modulo_13" for the top level hierarchy
-Info (12128): Elaborating entity "MOD13" for hierarchy "MOD13:inst"
-Info (12128): Elaborating entity "g08_adder" for hierarchy "MOD13:inst|g08_adder:inst7"
-Info (12128): Elaborating entity "1bit_ADD" for hierarchy "MOD13:inst|g08_adder:inst7|1bit_ADD:inst14"
-Info (12128): Elaborating entity "2C7BITS" for hierarchy "MOD13:inst|2C7BITS:inst5"
-Info (12128): Elaborating entity "TIME13" for hierarchy "MOD13:inst|TIME13:inst3"
-Info (12128): Elaborating entity "FLOOR13" for hierarchy "MOD13:inst|FLOOR13:inst"
+Info (12127): Elaborating entity "MOD13" for the top level hierarchy
+Info (12128): Elaborating entity "FLOOR13" for hierarchy "FLOOR13:inst"
+Info (12128): Elaborating entity "g08_adder" for hierarchy "FLOOR13:inst|g08_adder:inst"
+Info (12128): Elaborating entity "1bit_ADD" for hierarchy "FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14"
+Info (12128): Elaborating entity "2C7BITS" for hierarchy "2C7BITS:inst5"
+Info (12128): Elaborating entity "TIME13" for hierarchy "TIME13:inst3"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "FLOOR[3]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 485 megabytes
-    Info: Processing ended: Tue Oct 03 13:21:02 2017
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 17 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 533 megabytes
+    Info: Processing ended: Wed Nov 29 15:07:34 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 

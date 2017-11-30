@@ -27,7 +27,7 @@ port ( clk : in std_logic;
 end g08_comp_player;
 
 architecture computer of g08_comp_player is
-TYPE state_signal IS (newRound, A, B, C, D, E); -- 5 states from state transition diagram
+TYPE state_signal IS (newRound, player, A, B, C, D, E); -- 5 states from state transition diagram
 SIGNAL state: state_signal;
 		
 begin
@@ -50,22 +50,29 @@ state_update : process(clk)
 				HUMAN_WINS_IN := to_unsigned(0, 2);
 				SUM_COMPUTER_IN := to_unsigned(0, 6);
 				GAME_OVER <= '0';
-				state <= A;
+				DONE <= '0';
+				state <= newRound;
 			end if;
 			case state is
 				when newRound =>
 					if DRAWS = '0' then 
 						DRAWS := '1';
 						SUM_COMPUTER_IN := CARD_TO_PLAY;
+						REQUEST_NEW_CARD <= '1';
 					else 
 						SUM_COMPUTER_IN := SUM_COMPUTER_IN + CARD_TO_PLAY;
 						TOP_CARD := CARD_TO_PLAY;
+						REQUEST_NEW_CARD <= '0';
 						if SUM_COMPUTER_IN = 21 then
 							state <= D;
-						else 
-							state <= A;
-							DONE <= '1'; -- gives control to player FSM 
+						else
+							state <= player;
+							DONE <= '1';
 						end if;
+					end if;
+				when player =>
+					if TURN ='1' then
+						state <= A;
 					end if;
 				when A =>
 					if TURN = '0' then state <= B; -- computer's turn

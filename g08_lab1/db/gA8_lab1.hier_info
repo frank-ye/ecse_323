@@ -1,36 +1,45 @@
-|g08_Modulo_13
-MOD[0] <= MOD13:inst.OUT[0]
-MOD[1] <= MOD13:inst.OUT[1]
-MOD[2] <= MOD13:inst.OUT[2]
-MOD[3] <= MOD13:inst.OUT[3]
-A[0] => MOD13:inst.A[0]
-A[1] => MOD13:inst.A[1]
-A[2] => MOD13:inst.A[2]
-A[3] => MOD13:inst.A[3]
-A[4] => MOD13:inst.A[4]
-A[5] => MOD13:inst.A[5]
-
-
-|g08_Modulo_13|MOD13:inst
+|MOD13
+FLOOR[0] <= INT[0].DB_MAX_OUTPUT_PORT_TYPE
+FLOOR[1] <= INT[1].DB_MAX_OUTPUT_PORT_TYPE
+FLOOR[2] <= INT[2].DB_MAX_OUTPUT_PORT_TYPE
+FLOOR[3] <= <GND>
+A[0] => FLOOR13:inst.IN[0]
+A[0] => g08_adder:inst7.A[0]
+A[1] => FLOOR13:inst.IN[1]
+A[1] => g08_adder:inst7.A[1]
+A[2] => FLOOR13:inst.IN[2]
+A[2] => g08_adder:inst7.A[2]
+A[3] => FLOOR13:inst.IN[3]
+A[3] => g08_adder:inst7.A[3]
+A[4] => FLOOR13:inst.IN[4]
+A[4] => g08_adder:inst7.A[4]
+A[5] => FLOOR13:inst.IN[5]
+A[5] => g08_adder:inst7.A[5]
 OUT[0] <= g08_adder:inst7.SUM[0]
 OUT[1] <= g08_adder:inst7.SUM[1]
 OUT[2] <= g08_adder:inst7.SUM[2]
 OUT[3] <= g08_adder:inst7.SUM[3]
-A[0] => g08_adder:inst7.A[0]
-A[0] => FLOOR13:inst.IN[0]
-A[1] => g08_adder:inst7.A[1]
-A[1] => FLOOR13:inst.IN[1]
-A[2] => g08_adder:inst7.A[2]
-A[2] => FLOOR13:inst.IN[2]
-A[3] => g08_adder:inst7.A[3]
-A[3] => FLOOR13:inst.IN[3]
-A[4] => g08_adder:inst7.A[4]
-A[4] => FLOOR13:inst.IN[4]
-A[5] => g08_adder:inst7.A[5]
-A[5] => FLOOR13:inst.IN[5]
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7
+|MOD13|FLOOR13:inst
+OUT[6] <= g08_adder:inst.SUM[6]
+OUT[7] <= g08_adder:inst.SUM[7]
+OUT[8] <= g08_adder:inst.Cout
+IN[0] => g08_adder:inst.A[0]
+IN[0] => g08_adder:inst.B[2]
+IN[1] => g08_adder:inst.A[1]
+IN[1] => g08_adder:inst.B[3]
+IN[2] => g08_adder:inst.A[2]
+IN[2] => g08_adder:inst.B[4]
+IN[3] => g08_adder:inst.A[3]
+IN[3] => g08_adder:inst.B[5]
+IN[4] => g08_adder:inst.A[4]
+IN[4] => g08_adder:inst.B[6]
+IN[5] => g08_adder:inst.A[5]
+IN[5] => g08_adder:inst.B[7]
+
+
+|MOD13|FLOOR13:inst|g08_adder:inst
 Cout <= 1bit_ADD:inst14.Cout
 A[0] => 1bit_ADD:inst.A
 A[1] => 1bit_ADD:inst7.A
@@ -58,7 +67,7 @@ SUM[6] <= 1bit_ADD:inst13.SUM
 SUM[7] <= 1bit_ADD:inst14.SUM
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst14
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -69,7 +78,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst13
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -80,7 +89,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst12
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -91,7 +100,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst11
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -102,7 +111,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst10
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -113,7 +122,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst9
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -124,7 +133,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst7
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst7
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -135,7 +144,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|g08_adder:inst7|1bit_ADD:inst
+|MOD13|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -146,7 +155,123 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5
+|MOD13|g08_adder:inst7
+Cout <= 1bit_ADD:inst14.Cout
+A[0] => 1bit_ADD:inst.A
+A[1] => 1bit_ADD:inst7.A
+A[2] => 1bit_ADD:inst9.A
+A[3] => 1bit_ADD:inst10.A
+A[4] => 1bit_ADD:inst11.A
+A[5] => 1bit_ADD:inst12.A
+A[6] => 1bit_ADD:inst13.A
+A[7] => 1bit_ADD:inst14.A
+B[0] => 1bit_ADD:inst.B
+B[1] => 1bit_ADD:inst7.B
+B[2] => 1bit_ADD:inst9.B
+B[3] => 1bit_ADD:inst10.B
+B[4] => 1bit_ADD:inst11.B
+B[5] => 1bit_ADD:inst12.B
+B[6] => 1bit_ADD:inst13.B
+B[7] => 1bit_ADD:inst14.B
+SUM[0] <= 1bit_ADD:inst.SUM
+SUM[1] <= 1bit_ADD:inst7.SUM
+SUM[2] <= 1bit_ADD:inst9.SUM
+SUM[3] <= 1bit_ADD:inst10.SUM
+SUM[4] <= 1bit_ADD:inst11.SUM
+SUM[5] <= 1bit_ADD:inst12.SUM
+SUM[6] <= 1bit_ADD:inst13.SUM
+SUM[7] <= 1bit_ADD:inst14.SUM
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst14
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst13
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst12
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst11
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst10
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst9
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst7
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|g08_adder:inst7|1bit_ADD:inst
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+B => inst.IN1
+B => inst5.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD13|2C7BITS:inst5
 OUT[0] <= g08_adder:inst.SUM[0]
 OUT[1] <= g08_adder:inst.SUM[1]
 OUT[2] <= g08_adder:inst.SUM[2]
@@ -163,7 +288,7 @@ IN[5] => inst10.IN0
 IN[6] => inst11.IN0
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst
+|MOD13|2C7BITS:inst5|g08_adder:inst
 Cout <= 1bit_ADD:inst14.Cout
 A[0] => 1bit_ADD:inst.A
 A[1] => 1bit_ADD:inst7.A
@@ -191,7 +316,7 @@ SUM[6] <= 1bit_ADD:inst13.SUM
 SUM[7] <= 1bit_ADD:inst14.SUM
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst14
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst14
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -202,7 +327,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst13
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst13
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -213,7 +338,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst12
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst12
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -224,7 +349,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst11
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst11
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -235,7 +360,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst10
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -246,7 +371,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst9
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -257,7 +382,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst7
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -268,7 +393,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst
+|MOD13|2C7BITS:inst5|g08_adder:inst|1bit_ADD:inst
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -279,7 +404,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3
+|MOD13|TIME13:inst3
 OUT[0] <= g08_adder:inst.SUM[0]
 OUT[1] <= g08_adder:inst.SUM[1]
 OUT[2] <= g08_adder:inst.SUM[2]
@@ -298,7 +423,7 @@ IN[2] => g08_adder:inst.A[5]
 IN[2] => g08_adder:inst.B[4]
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst
+|MOD13|TIME13:inst3|g08_adder:inst
 Cout <= 1bit_ADD:inst14.Cout
 A[0] => 1bit_ADD:inst.A
 A[1] => 1bit_ADD:inst7.A
@@ -326,7 +451,7 @@ SUM[6] <= 1bit_ADD:inst13.SUM
 SUM[7] <= 1bit_ADD:inst14.SUM
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst14
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst14
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -337,7 +462,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst13
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst13
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -348,7 +473,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst12
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst12
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -359,7 +484,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst11
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst11
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -370,7 +495,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst10
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -381,7 +506,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst9
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -392,7 +517,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst7
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst7
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -403,141 +528,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g08_Modulo_13|MOD13:inst|TIME13:inst3|g08_adder:inst|1bit_ADD:inst
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst
-OUT[6] <= g08_adder:inst.SUM[6]
-OUT[7] <= g08_adder:inst.SUM[7]
-OUT[8] <= g08_adder:inst.Cout
-IN[0] => g08_adder:inst.A[0]
-IN[0] => g08_adder:inst.B[2]
-IN[1] => g08_adder:inst.A[1]
-IN[1] => g08_adder:inst.B[3]
-IN[2] => g08_adder:inst.A[2]
-IN[2] => g08_adder:inst.B[4]
-IN[3] => g08_adder:inst.A[3]
-IN[3] => g08_adder:inst.B[5]
-IN[4] => g08_adder:inst.A[4]
-IN[4] => g08_adder:inst.B[6]
-IN[5] => g08_adder:inst.A[5]
-IN[5] => g08_adder:inst.B[7]
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst
-Cout <= 1bit_ADD:inst14.Cout
-A[0] => 1bit_ADD:inst.A
-A[1] => 1bit_ADD:inst7.A
-A[2] => 1bit_ADD:inst9.A
-A[3] => 1bit_ADD:inst10.A
-A[4] => 1bit_ADD:inst11.A
-A[5] => 1bit_ADD:inst12.A
-A[6] => 1bit_ADD:inst13.A
-A[7] => 1bit_ADD:inst14.A
-B[0] => 1bit_ADD:inst.B
-B[1] => 1bit_ADD:inst7.B
-B[2] => 1bit_ADD:inst9.B
-B[3] => 1bit_ADD:inst10.B
-B[4] => 1bit_ADD:inst11.B
-B[5] => 1bit_ADD:inst12.B
-B[6] => 1bit_ADD:inst13.B
-B[7] => 1bit_ADD:inst14.B
-SUM[0] <= 1bit_ADD:inst.SUM
-SUM[1] <= 1bit_ADD:inst7.SUM
-SUM[2] <= 1bit_ADD:inst9.SUM
-SUM[3] <= 1bit_ADD:inst10.SUM
-SUM[4] <= 1bit_ADD:inst11.SUM
-SUM[5] <= 1bit_ADD:inst12.SUM
-SUM[6] <= 1bit_ADD:inst13.SUM
-SUM[7] <= 1bit_ADD:inst14.SUM
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst14
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst13
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst12
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst11
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst10
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst9
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst7
-SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-B => inst.IN1
-B => inst5.IN1
-Cin => inst2.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g08_Modulo_13|MOD13:inst|FLOOR13:inst|g08_adder:inst|1bit_ADD:inst
+|MOD13|TIME13:inst3|g08_adder:inst|1bit_ADD:inst
 SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
