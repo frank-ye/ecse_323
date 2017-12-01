@@ -12,6 +12,7 @@ use ieee.std_logic_unsigned.all;
 
 entity player_FSM is
 port ( clk : in std_logic;
+		 RESET : in std_logic;
 		 ACE_TOGGLE: in std_logic_vector(3 downto 0);
 		 DONE: in std_logic;
 		 NEW_CARD: in std_logic_vector(5 downto 0);
@@ -25,11 +26,11 @@ port ( clk : in std_logic;
 end player_FSM;
 
 architecture system_fsm of player_FSM is
-TYPE state_signal IS ( A, B, C, D, E); -- states from state transition diagram
+TYPE state_signal IS ( goLowFirst, A, B, C, D, middle, E); -- states from state transition diagram
 SIGNAL state: state_signal;
 		
 begin
-state_update : process(clk, ACE_TOGGLE)
+state_update : process(clk, ACE_TOGGLE, RESET)
 	
 	-- DECLARE VARIABLES
 	VARIABLE DRAWS : std_logic;
@@ -40,30 +41,20 @@ state_update : process(clk, ACE_TOGGLE)
 	VARIABLE COUNTER: std_logic_vector(3 downto 0);
 	
 	begin
-		
+	
 	-- INSTANTIATE unsigned variables corresponding to variables above
-	if clk'EVENT and clk = '1' then
-		COUNTER := ACE_COUNT_SIGNAL_IN AND ACE_TOGGLE;
-		case COUNTER is
-			when "0001" =>
-				SUM_PLAYER_IN := DEFAULT + to_unsigned(10, 6);
-			when  "0011" =>
-				SUM_PLAYER_IN := DEFAULT + to_unsigned(20, 6);
-			when  "0111" => 
-				SUM_PLAYER_IN := DEFAULT + to_unsigned(30, 6);
-			when  "1111" =>
-				SUM_PLAYER_IN := DEFAULT + to_unsigned(40, 6);
-			when others =>
-				SUM_PLAYER_IN := DEFAULT;
-		end case;
-		
+	if RESET = '1' then
+		state <= goLowFirst ;
+	elsif clk'EVENT and clk = '1' then
 		case state is 
-			when A =>
+			when goLowFirst => 
 				DRAWS := '0';
-				--SUM_PLAYER_IN := to_unsigned(0);
+				SUM_PLAYER_IN := to_unsigned(0, 6);
 				ACE_COUNT := to_unsigned(0, 3);
 				default := to_unsigned(0, 6);
 				LEGAL_PLAY <= '1';
+				state <= A;
+			when A =>
 				if DONE = '1' then 
 					state <= B;
 					TURN <= '1';
@@ -73,6 +64,7 @@ state_update : process(clk, ACE_TOGGLE)
 				if DRAWS = '0' then
 					--SUM_PLAYER_IN := SUM_PLAYER_IN + unsigned(NEW_CARD);
 					DEFAULT := DEFAULT + unsigned(NEW_CARD);
+					
 					if NEW_CARD = "000001" then
 						ACE_COUNT := ACE_COUNT + 1;
 					end if;
@@ -88,6 +80,19 @@ state_update : process(clk, ACE_TOGGLE)
 				end if;
 			
 			when C => --wait for hit
+				COUNTER := ACE_COUNT_SIGNAL_IN AND ACE_TOGGLE;
+				case COUNTER is
+					when "0001" =>
+						SUM_PLAYER_IN := DEFAULT + to_unsigned(10, 6);
+					when  "0011" =>
+						SUM_PLAYER_IN := DEFAULT + to_unsigned(20, 6);
+					when  "0111" => 
+						SUM_PLAYER_IN := DEFAULT + to_unsigned(30, 6);
+					when  "1111" =>
+						SUM_PLAYER_IN := DEFAULT + to_unsigned(40, 6);
+					when others =>
+						SUM_PLAYER_IN := DEFAULT;
+				end case;
 				if HIT_EN = '1' then 
 					state <= D;
 				end if;
@@ -100,7 +105,9 @@ state_update : process(clk, ACE_TOGGLE)
 				DEFAULT := DEFAULT + unsigned(NEW_CARD);
 				if NEW_CARD = "000001" then
 						ACE_COUNT := ACE_COUNT + 1;
-					end if;
+				end if;
+				state <= middle;
+			when middle =>
 				if DEFAULT > to_unsigned(21, 6) then 
 					LEGAL_PLAY <= '0';
 					state <= E; --end of game
@@ -110,7 +117,7 @@ state_update : process(clk, ACE_TOGGLE)
 			when E =>
 				TURN <= '0';
 				if DONE = '0' then
-					state <= A;
+					state <= goLowFirst;
 				end if;
 		end case;
 			
@@ -126,7 +133,6 @@ state_update : process(clk, ACE_TOGGLE)
 			when others =>
 				ACE_COUNT_SIGNAL_IN := "0000";
 		end case;
-			
 		PLAYER_SUM <= std_logic_vector(SUM_PLAYER_IN);
 		ACE_COUNT_SIGNAL <= ACE_COUNT_SIGNAL_IN;
 	end if;

@@ -98,7 +98,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -123,7 +123,7 @@ applicable agreement for further details.
 		(pt 16 0)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 7 2 19 16)(font "Courier New" (bold))(vertical)(invisible))
+		(text "OUT" (rect 7 2 19 19)(font "Courier New" (bold))(vertical)(invisible))
 		(line (pt 16 9)(pt 16 0))
 	)
 	(drawing
@@ -156,7 +156,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -188,7 +188,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 48 24)(pt 64 24))
 	)
 	(drawing
@@ -304,7 +304,7 @@ applicable agreement for further details.
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing
-		(text "datab[]=4000" (rect 20 57 94 71)(font "Arial" (font_size 8)))
+		(text "datab[]=20000000" (rect 20 57 122 71)(font "Arial" (font_size 8)))
 		(text "unsigned compare" (rect 36 26 125 38)(font "Arial" ))
 		(line (pt 16 16)(pt 16 80))
 		(line (pt 16 16)(pt 112 16))
