@@ -383,18 +383,94 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to inst7 -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to inst8 -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to inst9 -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=107" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=107" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=64450" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_g08_lab5_auto_signaltap_0_1_50d3," -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=24" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=1024" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=17668" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=1024" -section_id auto_signaltap_0
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab5/pulse_gen_test.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "test_bed_lab4:inst3|RAND[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "test_bed_lab4:inst3|RAND[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "test_bed_lab4:inst3|RAND[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "test_bed_lab4:inst3|RAND[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "test_bed_lab4:inst3|RAND[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "test_bed_lab4:inst3|RAND[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "test_bed_lab4:inst3|RAND[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "test_bed_lab4:inst3|RAND[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "test_bed_lab4:inst3|RAND[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "test_bed_lab4:inst3|RAND[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "test_bed_lab4:inst3|RAND[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "test_bed_lab4:inst3|RAND[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "test_bed_lab4:inst3|RAND[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "test_bed_lab4:inst3|RAND[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "test_bed_lab4:inst3|RAND[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "test_bed_lab4:inst3|RAND[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "test_bed_lab4:inst3|RAND[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "test_bed_lab4:inst3|RAND[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "test_bed_lab4:inst3|RAND[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "test_bed_lab4:inst3|RAND[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "test_bed_lab4:inst3|RAND[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "test_bed_lab4:inst3|RAND[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "test_bed_lab4:inst3|RAND[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "test_bed_lab4:inst3|RAND[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "test_bed_lab4:inst3|RAND[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "test_bed_lab4:inst3|RAND[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "test_bed_lab4:inst3|RAND[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "test_bed_lab4:inst3|RAND[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "test_bed_lab4:inst3|RAND[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "test_bed_lab4:inst3|RAND[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "test_bed_lab4:inst3|RAND[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "test_bed_lab4:inst3|RAND[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "test_bed_lab4:inst3|RAND[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "test_bed_lab4:inst3|RAND[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "test_bed_lab4:inst3|RAND[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "test_bed_lab4:inst3|RAND[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "test_bed_lab4:inst3|RAND[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "test_bed_lab4:inst3|RAND[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "test_bed_lab4:inst3|RAND[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "test_bed_lab4:inst3|RAND[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "test_bed_lab4:inst3|RAND[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "test_bed_lab4:inst3|RAND[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "test_bed_lab4:inst3|RAND[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "test_bed_lab4:inst3|RAND[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "test_bed_lab4:inst3|RAND[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "test_bed_lab4:inst3|RAND[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "test_bed_lab4:inst3|RAND[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "test_bed_lab4:inst3|RAND[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "test_bed_lab4:inst3|RAND[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "test_bed_lab4:inst3|RAND[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "test_bed_lab4:inst3|RAND[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "test_bed_lab4:inst3|RAND[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "test_bed_lab4:inst3|RAND[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "test_bed_lab4:inst3|RAND[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "test_bed_lab4:inst3|RAND[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "test_bed_lab4:inst3|RAND[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "test_bed_lab4:inst3|RAND[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "test_bed_lab4:inst3|RAND[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "test_bed_lab4:inst3|RAND[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "test_bed_lab4:inst3|RAND[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "test_bed_lab4:inst3|RAND[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "test_bed_lab4:inst3|RAND[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "test_bed_lab4:inst3|RAND[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "test_bed_lab4:inst3|RAND[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "test_bed_lab4:inst3|VALUEOUT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "test_bed_lab4:inst3|VALUEOUT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "test_bed_lab4:inst3|VALUEOUT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "test_bed_lab4:inst3|VALUEOUT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "test_bed_lab4:inst3|VALUEOUT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "test_bed_lab4:inst3|VALUEOUT[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "test_bed_lab4:inst3|VALUEOUT[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "test_bed_lab4:inst3|VALUEOUT[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "test_bed_lab4:inst3|VALUEOUT[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "test_bed_lab4:inst3|VALUEOUT[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "test_bed_lab4:inst3|VALUEOUT[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "test_bed_lab4:inst3|VALUEOUT[5]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=145" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=145" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=20286" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=17085" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_g08_lab5_auto_signaltap_0_1_6f94," -section_id auto_signaltap_0
 set_global_assignment -name SLD_FILE "C:/Users/Frank/Desktop/My Stuff/School Files/Semester 5/ECSE 323/Labs/Assignments/g08_lab5/output_files/g08_lab5_auto_stripped.stp"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

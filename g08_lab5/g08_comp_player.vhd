@@ -123,16 +123,20 @@ state_update : process(clk, RESET)
 						state <= E;
 					when E =>
 					STATE_OUT <= "1000";
+						DONE <= '0';
 						if (HUMAN_WINS_IN = 3 OR COMPUTER_WINS_IN = 3) then
 							GAME_OVER <= '1';
+							SUM_COMPUTER_IN := to_unsigned(0, 6);	
 							if HUMAN_WINS_IN = 3 then 
 								WINNER <= '1';
 							else WINNER <= '0';
 							end if;
+							--if NEW_GAME <= '1' then 
+							--	state <= goLowFirst;
+							-- end if;
 						else 
 							state <= newGameDebounce;
 							DRAWS := '0';
-							DONE <= '0';
 						end if;
 				end case;
 		end if;
