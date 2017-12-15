@@ -133,7 +133,7 @@ state_update : process(clk, RESET)
 							end if;
 							--if NEW_GAME <= '1' then 
 							--	state <= goLowFirst;
-							-- end if;
+							-- 7end if;
 						else 
 							state <= newGameDebounce;
 							DRAWS := '0';

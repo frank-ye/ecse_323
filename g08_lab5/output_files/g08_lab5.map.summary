@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Dec 04 13:34:13 2017
+Analysis & Synthesis Status : Successful - Tue Dec 05 15:12:31 2017
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : g08_lab5
-Top-level Entity Name : test_bed
+Top-level Entity Name : DIVIDE10
 Family : Cyclone II
-Total logic elements : 4,344
-    Total combinational functions : 2,521
-    Dedicated logic registers : 2,771
-Total registers : 2771
-Total pins : 47
+Total logic elements : 3,197
+    Total combinational functions : 1,313
+    Dedicated logic registers : 2,249
+Total registers : 2249
+Total pins : 14
 Total virtual pins : 0
-Total memory bits : 151,808
+Total memory bits : 148,480
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
